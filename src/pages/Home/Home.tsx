@@ -19,22 +19,3 @@ export default function Home() {
     </section>
   );
 }
-
-// return (
-//   <section className="home">
-//   <div className="home_name">
-//     <p className={leftPositionFirst ? "animationLetter" : ""}>
-//       Hello I'm Alex
-//     </p>
-//     <p className={leftPositionFirst ? "animationLetter" : ""}>,</p>
-//   </div>
-//   <div className="home_creative">
-//     <p className={leftPositionFirst ? "animationLetter" : ""}> a </p>
-//     <p className={leftPositionFirst ? "animationCreative" : ""}>
-//       {" "}
-//       creative{" "}
-//     </p>
-//     <p className={leftPositionFirst ? "animationLetter" : ""}> developer</p>
-//   </div>
-// </section>
-// );
