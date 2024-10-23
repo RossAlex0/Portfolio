@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../assets/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../assets/fonts/OpenSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
