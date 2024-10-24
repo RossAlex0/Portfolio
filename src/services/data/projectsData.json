@@ -3,14 +3,12 @@
     "id": 0,
     "name": "WildWeather",
     "techno": [
-      "React-Native",
-      "TypeScript",
-      "Expo",
-      "NodeJs",
-      "ExpressJs",
-      "Mongoose",
-      "MongoDB",
-      "APIRest"
+      { "name": "TypeScript", "img": "/icon/typescript.svg" },
+      { "name": "React-Native", "img": "/icon/react.svg" },
+      { "name": "Expo", "img": "/icon/expo.svg" },
+      { "name": "NodeJs", "img": "/icon/node.svg" },
+      { "name": "ExpressJs", "img": "/icon/express.svg" },
+      { "name": "MongoDB", "img": "/icon/mongo.svg" }
     ],
     "image": "/project/wild.png",
     "video": "",
@@ -21,14 +19,13 @@
     "id": 1,
     "name": "Street Art Hunter",
     "techno": [
-      "Html",
-      "Css",
-      "JavaScript",
-      "React",
-      "NodeJs",
-      "ExpressJs",
-      "MySQL",
-      "APIRest"
+      { "name": "HTML", "img": "/icon/html.svg" },
+      { "name": "CSS", "img": "/icon/css.svg" },
+      { "name": "JavaScript", "img": "/icon/javascript.svg" },
+      { "name": "React", "img": "/icon/react.svg" },
+      { "name": "NodeJs", "img": "/icon/node.svg" },
+      { "name": "ExpressJs", "img": "/icon/express.svg" },
+      { "name": "MySQL", "img": "/icon/sql.svg" }
     ],
     "image": "/project/street.png",
     "video": "",
@@ -38,7 +35,12 @@
   {
     "id": 2,
     "name": "Pokedex",
-    "techno": ["Html", "Css", "JavaScript", "React", "ViteJs"],
+    "techno": [
+      { "name": "HTML", "img": "/icon/html.svg" },
+      { "name": "CSS", "img": "/icon/css.svg" },
+      { "name": "JavaScript", "img": "/icon/javascript.svg" },
+      { "name": "React", "img": "/icon/react.svg" }
+    ],
     "image": "/project/poke.svg",
     "video": "",
     "format": "web",
@@ -48,14 +50,12 @@
     "id": 3,
     "name": "BudgetMade",
     "techno": [
-      "React-Native",
-      "TypeScript",
-      "Expo",
-      "Expo-Router",
-      "NodeJs",
-      "ExpressJs",
-      "MySQL",
-      "APIRest"
+      { "name": "TypeScript", "img": "/icon/typescript.svg" },
+      { "name": "React-Native", "img": "/icon/react.svg" },
+      { "name": "Expo", "img": "/icon/expo.svg" },
+      { "name": "NodeJs", "img": "/icon/node.svg" },
+      { "name": "ExpressJs", "img": "/icon/express.svg" },
+      { "name": "MySQL", "img": "/icon/sql.svg" }
     ],
     "image": "/project/budgetmade.svg",
     "video": "",
@@ -66,14 +66,13 @@
     "id": 4,
     "name": "RoyalBlue",
     "techno": [
-      "Html",
-      "Css",
-      "TypeScript",
-      "React",
-      "NodeJs",
-      "ExpressJs",
-      "MySQL",
-      "APIRest"
+      { "name": "HTML", "img": "/icon/html.svg" },
+      { "name": "CSS", "img": "/icon/css.svg" },
+      { "name": "TypeScript", "img": "/icon/typescript.svg" },
+      { "name": "React", "img": "/icon/react.svg" },
+      { "name": "NodeJs", "img": "/icon/node.svg" },
+      { "name": "ExpressJs", "img": "/icon/express.svg" },
+      { "name": "MySQL", "img": "/icon/sql.svg" }
     ],
     "image": "/project/royal.svg",
     "video": "",
@@ -83,7 +82,12 @@
   {
     "id": 5,
     "name": "PortFolio",
-    "techno": ["Html", "Css", "TypeScript", "React", "ViteJs"],
+    "techno": [
+      { "name": "HTML", "img": "/icon/html.svg" },
+      { "name": "CSS", "img": "/icon/css.svg" },
+      { "name": "TypeScript", "img": "/icon/typescript.svg" },
+      { "name": "React", "img": "/icon/react.svg" }
+    ],
     "image": "/project/royal.svg",
     "video": "",
     "format": "web",
