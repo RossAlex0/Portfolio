@@ -1,4 +1,4 @@
-.project {
+.projects {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -37,6 +37,10 @@
       background: var(--gradientleft-color);
       background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+
+    &:active {
+      transform: scale(1);
     }
   }
 }
