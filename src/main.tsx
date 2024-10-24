@@ -7,6 +7,9 @@ import Home from "./pages/Home/Home";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
+import ProjectsWeb from "./pages/Projects/ProjectsWeb/ProjectsWeb";
+import ProjectsMobile from "./pages/Projects/ProjectsMobile/ProjectsMobile";
+import { getProjectsFormat } from "./services/utils/filterFormat";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +22,20 @@ const router = createBrowserRouter([
       {
         path: "/projects",
         element: <Projects />,
+      },
+      {
+        path: "/projects/web",
+        element: <ProjectsWeb />,
+        loader: () => {
+          return getProjectsFormat("web");
+        },
+      },
+      {
+        path: "/projects/mobile",
+        element: <ProjectsMobile />,
+        loader: () => {
+          return getProjectsFormat("mobile");
+        },
       },
       {
         path: "/about",
