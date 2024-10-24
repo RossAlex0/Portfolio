@@ -1,7 +1,7 @@
 export interface ProjectInterface {
   id: number;
   name: string;
-  techno: string[];
+  techno: Techno[];
   image: string;
   video: string;
   format: string;
@@ -10,4 +10,9 @@ export interface ProjectInterface {
 
 export interface ProjectPropsInterface {
   project: ProjectInterface;
+}
+
+export interface Techno {
+  name: string;
+  img: string;
 }
