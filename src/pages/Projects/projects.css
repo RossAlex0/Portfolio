@@ -20,7 +20,7 @@
   gap: var(--gap);
   margin-bottom: 1rem;
 
-  & button {
+  & .button_switch {
     width: 6rem;
     background: none;
     border: 1px solid var(--text-color);
@@ -43,6 +43,31 @@
       transform: scale(1);
     }
   }
+}
+
+.button_arrow {
+  width: 3rem;
+  background: none;
+  border: 1px solid var(--text-color);
+  padding-top: 0.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 1s ease-out;
+
+  &:hover {
+    transform: scale(1.1);
+    background: var(--gradientleft-color);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+.rotate {
+  transform: rotate(180deg);
 }
 
 .project_cards {

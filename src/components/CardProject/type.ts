@@ -10,6 +10,7 @@ export interface ProjectInterface {
 
 export interface ProjectPropsInterface {
   project: ProjectInterface;
+  style: object;
 }
 
 export interface Techno {

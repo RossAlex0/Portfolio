@@ -8,7 +8,7 @@ import chevron from "/icon/chevron.svg";
 
 import "./CardProject.css";
 
-export default function CardProject({ project }: ProjectPropsInterface) {
+export default function CardProject({ project, style }: ProjectPropsInterface) {
   const navigate = useNavigate();
 
   const [index, setIndex] = useState<number>();
@@ -22,7 +22,7 @@ export default function CardProject({ project }: ProjectPropsInterface) {
   }, [project]);
 
   return (
-    <div className="card">
+    <div className="card" style={style}>
       <div style={{ backgroundImage: `url(${project.image})` }} />
       <h2>{project.name}</h2>
       <p>{project.description}</p>
