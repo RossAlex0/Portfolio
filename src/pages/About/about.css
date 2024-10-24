@@ -121,6 +121,24 @@
   }
 }
 
+.title_left {
+  position: absolute;
+  left: 2.8rem;
+  top: -1.5rem;
+  color: var(--text-color);
+  font-family: var(--open-semibold);
+  font-size: 18px;
+  opacity: 0.4;
+}
+.title_right {
+  position: absolute;
+  right: 2.8rem;
+  top: -1.5rem;
+  color: var(--text-color);
+  font-family: var(--open-semibold);
+  font-size: 18px;
+  opacity: 0.4;
+}
 .soft::before,
 .hard::before,
 .tool::before {
