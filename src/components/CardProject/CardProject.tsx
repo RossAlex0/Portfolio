@@ -1,6 +1,6 @@
 import { ProjectPropsInterface } from "./type";
 
-import chevron from "../../../public/icon/chevron.svg";
+import chevron from "/icon/chevron.svg";
 
 import "./CardProject.css";
 
