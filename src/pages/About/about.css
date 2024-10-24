@@ -92,7 +92,8 @@
   }
 }
 
-.soft {
+/* WITH ROTATE */
+/* .soft {
   width: 85%;
   transform: rotate(2deg);
   align-self: flex-end;
@@ -119,25 +120,54 @@
   & .skill_slide {
     animation: 31s textSlideRight linear infinite;
   }
+} */
+
+/* WITH NO ROTATE */
+.soft {
+  width: 85%;
+  align-self: flex-end;
+  margin-bottom: 2rem;
+  & .skill_slide {
+    animation: 60s textSlide linear infinite;
+  }
+}
+
+.hard {
+  width: 88%;
+  align-self: flex-start;
+
+  margin-bottom: 2rem;
+  & .skill_slide {
+    animation: 75s textSlideRight linear infinite;
+  }
+}
+
+.tool {
+  width: 70%;
+  align-self: flex-end;
+
+  & .skill_slide {
+    animation: 31s textSlide linear infinite;
+  }
 }
 
 .title_left {
   position: absolute;
-  left: 2.8rem;
-  top: -1.5rem;
+  left: 2rem;
+  top: -1.4rem;
   color: var(--text-color);
   font-family: var(--open-semibold);
   font-size: 18px;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 .title_right {
   position: absolute;
-  right: 2.8rem;
-  top: -1.5rem;
+  right: 2rem;
+  top: -1.4rem;
   color: var(--text-color);
   font-family: var(--open-semibold);
   font-size: 18px;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 .soft::before,
 .hard::before,

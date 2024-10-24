@@ -44,7 +44,7 @@ export default function Contact() {
 
       <div className="body_skill">
         <div className="skill_border soft">
-          <p className="title_left">SOFT SKILLS</p>
+          <p className="title_right">SOFT SKILLS</p>
           <div className="skill_container">{repeatSkillSlide(3, softs)}</div>
         </div>
         <div className="skill_border hard">
