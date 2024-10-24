@@ -24,7 +24,7 @@ export default function Projects() {
       </div>
       <div className="project_cards">
         {projects.map((project) => (
-          <CardProject project={project} />
+          <CardProject key={project.id} project={project} />
         ))}
       </div>
     </section>

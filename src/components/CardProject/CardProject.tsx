@@ -1,11 +1,12 @@
 import { ProjectPropsInterface } from "./type";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+import { getProjectsFormat } from "../../services/utils/filterFormat";
 
 import chevron from "/icon/chevron.svg";
 
 import "./CardProject.css";
-import { useNavigate } from "react-router-dom";
-import { getProjectsFormat } from "../../services/utils/filterFormat";
-import { useEffect, useState } from "react";
 
 export default function CardProject({ project }: ProjectPropsInterface) {
   const navigate = useNavigate();
@@ -18,10 +19,10 @@ export default function CardProject({ project }: ProjectPropsInterface) {
     setIndex(
       response.findIndex((indexProject) => indexProject.id === project.id)
     );
-  }, []);
+  }, [project]);
 
   return (
-    <div key={project.id} className="card">
+    <div className="card">
       <div style={{ backgroundImage: `url(${project.image})` }} />
       <h2>{project.name}</h2>
       <p>{project.description}</p>
