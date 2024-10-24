@@ -41,3 +41,9 @@
     }
   }
 }
+
+.selected {
+  -webkit-text-fill-color: transparent;
+  background: var(--gradienttop-color);
+  background-clip: text;
+}
