@@ -1,3 +1,5 @@
+import React from "react";
+
 import skillData from "../../services/data/skillData.json";
 import { SkillInterface } from "./type";
 
@@ -11,12 +13,12 @@ export default function Contact() {
     const array = [];
     for (let i = 0; i <= nb; i++) {
       array.push(
-        <div className="skill_slide">
-          {skills.map((skill) => (
-            <>
-              <p key={skill}>{skill}</p>
-              <div className="cercle" />
-            </>
+        <div key={i} className="skill_slide">
+          {skills.map((skill, index) => (
+            <React.Fragment key={`${i}${index}`}>
+              <p key={`skill${i}${index}`}>{skill}</p>
+              <div key={`circle${i}${index}`} className="cercle" />
+            </React.Fragment>
           ))}
         </div>
       );
@@ -44,12 +46,15 @@ export default function Contact() {
 
       <div className="body_skill">
         <div className="skill_border soft">
+          <p className="title_right">SOFT SKILLS</p>
           <div className="skill_container">{repeatSkillSlide(3, softs)}</div>
         </div>
         <div className="skill_border hard">
+          <p className="title_left">HARD SKILLS</p>
           <div className="skill_container">{repeatSkillSlide(3, hards)}</div>
         </div>
         <div className="skill_border tool">
+          <p className="title_right">TOOLS</p>
           <div className="skill_container">{repeatSkillSlide(3, tools)}</div>
         </div>
       </div>
