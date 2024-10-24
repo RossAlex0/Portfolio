@@ -1,4 +1,4 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 
 import { ProjectInterface } from "../../../components/CardProject/type";
@@ -9,8 +9,11 @@ import "../webMobile.css";
 export default function ProjectsWeb() {
   const navigate = useNavigate();
   const projectData = useLoaderData() as ProjectInterface[];
+  const params = useParams();
 
-  const [projectIndex, setProjectIndex] = useState<number>(0);
+  const [projectIndex, setProjectIndex] = useState<number>(
+    params.id ? parseInt(params.id) : 0
+  );
 
   const visibleProject: ProjectInterface = projectData[projectIndex];
 

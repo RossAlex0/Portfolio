@@ -31,7 +31,21 @@ const router = createBrowserRouter([
         },
       },
       {
+        path: "/projects/web/:id",
+        element: <ProjectsWeb />,
+        loader: () => {
+          return getProjectsFormat("web");
+        },
+      },
+      {
         path: "/projects/mobile",
+        element: <ProjectsMobile />,
+        loader: () => {
+          return getProjectsFormat("mobile");
+        },
+      },
+      {
+        path: "/projects/mobile/:id",
         element: <ProjectsMobile />,
         loader: () => {
           return getProjectsFormat("mobile");
