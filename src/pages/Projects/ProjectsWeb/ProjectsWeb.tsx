@@ -37,7 +37,17 @@ export default function ProjectsWeb() {
       <h2>{visibleProject.name}</h2>
       <p>{visibleProject.description}</p>
       <div className="project_web">
-        <div className="project_movie"></div>
+        <div className="project_movie">
+          <iframe
+            width="100%"
+            height="100%"
+            src={visibleProject?.video}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{ overflow: "hidden", borderRadius: 22 }}
+          />
+        </div>
         <div className="project_techno">
           <div className="techno_border">
             {visibleProject.techno.map((language) => (
@@ -49,7 +59,7 @@ export default function ProjectsWeb() {
           </div>
         </div>
       </div>
-      <div className="project_button">
+      <div className="project_button_web">
         <button type="button" onClick={handleClickPrev}>
           <img src={chevron} alt="chevron" />
           Projet précèdent

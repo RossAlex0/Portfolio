@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import CardProject from "../../components/CardProject/CardProject";
 import { ProjectInterface } from "../../components/CardProject/type";
 import projectsData from "../../services/data/projectsData.json";
@@ -6,10 +5,15 @@ import projectsData from "../../services/data/projectsData.json";
 import chevron from "/icon/whitechevron.svg";
 import "./projects.css";
 import { useRef, useState } from "react";
+import { getProjectsFormat } from "../../services/utils/filterFormat";
 
 export default function Projects() {
   const projects = projectsData as ProjectInterface[];
-  const navigate = useNavigate();
+  const [projectFilter, setProjectFilter] = useState<
+    ProjectInterface[] | undefined
+  >();
+
+  const isProject: ProjectInterface[] = projectFilter ?? projects;
 
   const [position, setPosition] = useState<number>(0);
 
@@ -60,14 +64,14 @@ export default function Projects() {
         <button
           type="button"
           className="button_switch"
-          onClick={() => navigate("/projects/mobile")}
+          onClick={() => setProjectFilter(getProjectsFormat("mobile"))}
         >
           Mobile
         </button>
         <button
           type="button"
           className="button_switch"
-          onClick={() => navigate("/projects/web")}
+          onClick={() => setProjectFilter(getProjectsFormat("web"))}
         >
           Web
         </button>
@@ -82,7 +86,7 @@ export default function Projects() {
         </button>
       </div>
       <div className="project_cards">
-        {projects.map((project) => (
+        {isProject.map((project) => (
           <CardProject
             key={project.id}
             project={project}
