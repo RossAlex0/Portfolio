@@ -43,7 +43,6 @@ export default function Contact() {
           missions en autonomie.
         </p>
       </div>
-
       <div className="body_skill">
         <div className="skill_border soft">
           <p className="title_right">SOFT SKILLS</p>

@@ -4,6 +4,7 @@ export interface ProjectInterface {
   techno: Techno[];
   image: string;
   video: string;
+  poster: string;
   format: string;
   description: string;
 }
