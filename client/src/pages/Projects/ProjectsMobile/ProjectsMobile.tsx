@@ -34,13 +34,23 @@ export default function ProjectsWeb() {
         <img src={chevron} alt="chevron" />
         Retour
       </button>
-      <h2>{visibleProject.name}</h2>
-      <p>{visibleProject.description}</p>
-      <div className="project_web">
-        <div className="project_movie"></div>
-        <div className="project_techno">
-          <div className="techno_border">
-            {visibleProject.techno.map((language) => (
+      <h2>{visibleProject?.name}</h2>
+      <p>{visibleProject?.description}</p>
+      <div className="project_mobile">
+        <div className="project_movie_mobile">
+          <iframe
+            width="100%"
+            height="100%"
+            src={visibleProject?.video}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{ overflow: "hidden", borderRadius: 22 }}
+          />
+        </div>
+        <div className="project_techno_mobile">
+          <div className="techno_border_mobile">
+            {visibleProject?.techno.map((language) => (
               <div key={language.name}>
                 <img src={`${language.img}`} alt="technologies" />
                 <p>{language.name}</p>

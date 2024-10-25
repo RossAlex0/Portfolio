@@ -11,7 +11,8 @@
       { "name": "MongoDB", "img": "/icon/mongo.svg" }
     ],
     "image": "/project/wild.png",
-    "video": "",
+    "video": "https://youtube.com/embed/pyyyKSBrlU0",
+    "poster": "/poster/weatherposter.png",
     "format": "mobile",
     "description": "Application mobile cross-plateforme, offrant des prévisions et des visualisations météorologiques et astronomiques."
   },
@@ -28,7 +29,8 @@
       { "name": "MySQL", "img": "/icon/sql.svg" }
     ],
     "image": "/project/street.png",
-    "video": "",
+    "video": "https://youtube.com/embed/XwS-7c9GzNI",
+    "poster": "/poster/streetposter.svg",
     "format": "web",
     "description": "Site web responsive permettant de découvrir des œuvres d'art via une carte interactive. Un système de gamification intégré ainsi qu'une interface administrateur."
   },
@@ -42,7 +44,8 @@
       { "name": "React", "img": "/icon/react.svg" }
     ],
     "image": "/project/poke.svg",
-    "video": "",
+    "video": "https://youtube.com/embed/qkV7XQq-_Y0",
+    "poster": "/poster/pokemon.svg",
     "format": "web",
     "description": "Site web responsive et dynamique réaliser en équipe permettant de visualiser ou rechercher des Pokémon par nom, type ou génération."
   },
@@ -58,7 +61,8 @@
       { "name": "MySQL", "img": "/icon/sql.svg" }
     ],
     "image": "/project/budgetmade.svg",
-    "video": "",
+    "video": "https://www.youtube.com/embed/yH9_UERd5ZE",
+    "poster": "/poster/budgetmade.png",
     "format": "mobile",
     "description": "Développement d'une application mobile cross-plateforme, permettant de gérer et visualiser les dépenses avec une catégorisation semi-automatisée."
   },
@@ -75,22 +79,9 @@
       { "name": "MySQL", "img": "/icon/sql.svg" }
     ],
     "image": "/project/royal.svg",
-    "video": "",
+    "video": "https://youtube.com/embed/XKqZp2TdxZ8",
+    "poster": "/poster/royal.svg",
     "format": "web",
     "description": "Site web responsive et dynamique permettant de visualisé et réserver une activités ou une chambres dasn un hotel."
-  },
-  {
-    "id": 5,
-    "name": "PortFolio",
-    "techno": [
-      { "name": "HTML", "img": "/icon/html.svg" },
-      { "name": "CSS", "img": "/icon/css.svg" },
-      { "name": "TypeScript", "img": "/icon/typescript.svg" },
-      { "name": "React", "img": "/icon/react.svg" }
-    ],
-    "image": "/project/royal.svg",
-    "video": "",
-    "format": "web",
-    "description": "Portfolio"
   }
 ]
