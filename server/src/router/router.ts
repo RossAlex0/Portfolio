@@ -2,8 +2,9 @@ import express, { Request, Response, NextFunction } from "express";
 
 const router = express.Router();
 
-router.get("/", (req: Request, res: Response, next: NextFunction) => {
-  res.send("Welcome, to my portfolio server!");
-});
+import { createEmail } from "../middleware/transportEmail";
+import { send } from "../controller/SendEmail";
+
+router.post("/send-email", createEmail, send);
 
 export default router;
