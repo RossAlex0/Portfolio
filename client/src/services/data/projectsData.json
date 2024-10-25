@@ -1,0 +1,87 @@
+[
+  {
+    "id": 0,
+    "name": "WildWeather",
+    "techno": [
+      { "name": "TypeScript", "img": "/icon/typescript.svg" },
+      { "name": "React-Native", "img": "/icon/react.svg" },
+      { "name": "Expo", "img": "/icon/expo.svg" },
+      { "name": "NodeJs", "img": "/icon/node.svg" },
+      { "name": "ExpressJs", "img": "/icon/express.svg" },
+      { "name": "MongoDB", "img": "/icon/mongo.svg" }
+    ],
+    "image": "/project/wild.png",
+    "video": "https://youtube.com/embed/pyyyKSBrlU0",
+    "poster": "/poster/weatherposter.png",
+    "format": "mobile",
+    "description": "Application mobile cross-plateforme, offrant des prévisions et des visualisations météorologiques et astronomiques."
+  },
+  {
+    "id": 1,
+    "name": "Street Art Hunter",
+    "techno": [
+      { "name": "HTML", "img": "/icon/html.svg" },
+      { "name": "CSS", "img": "/icon/css.svg" },
+      { "name": "JavaScript", "img": "/icon/javascript.svg" },
+      { "name": "React", "img": "/icon/react.svg" },
+      { "name": "NodeJs", "img": "/icon/node.svg" },
+      { "name": "ExpressJs", "img": "/icon/express.svg" },
+      { "name": "MySQL", "img": "/icon/sql.svg" }
+    ],
+    "image": "/project/street.png",
+    "video": "https://youtube.com/embed/XwS-7c9GzNI",
+    "poster": "/poster/streetposter.svg",
+    "format": "web",
+    "description": "Site web responsive permettant de découvrir des œuvres d'art via une carte interactive. Un système de gamification intégré ainsi qu'une interface administrateur."
+  },
+  {
+    "id": 2,
+    "name": "Pokedex",
+    "techno": [
+      { "name": "HTML", "img": "/icon/html.svg" },
+      { "name": "CSS", "img": "/icon/css.svg" },
+      { "name": "JavaScript", "img": "/icon/javascript.svg" },
+      { "name": "React", "img": "/icon/react.svg" }
+    ],
+    "image": "/project/poke.svg",
+    "video": "https://youtube.com/embed/qkV7XQq-_Y0",
+    "poster": "/poster/pokemon.svg",
+    "format": "web",
+    "description": "Site web responsive et dynamique réaliser en équipe permettant de visualiser ou rechercher des Pokémon par nom, type ou génération."
+  },
+  {
+    "id": 3,
+    "name": "BudgetMade",
+    "techno": [
+      { "name": "TypeScript", "img": "/icon/typescript.svg" },
+      { "name": "React-Native", "img": "/icon/react.svg" },
+      { "name": "Expo", "img": "/icon/expo.svg" },
+      { "name": "NodeJs", "img": "/icon/node.svg" },
+      { "name": "ExpressJs", "img": "/icon/express.svg" },
+      { "name": "MySQL", "img": "/icon/sql.svg" }
+    ],
+    "image": "/project/budgetmade.svg",
+    "video": "https://www.youtube.com/embed/yH9_UERd5ZE",
+    "poster": "/poster/budgetmade.png",
+    "format": "mobile",
+    "description": "Développement d'une application mobile cross-plateforme, permettant de gérer et visualiser les dépenses avec une catégorisation semi-automatisée."
+  },
+  {
+    "id": 4,
+    "name": "RoyalBlue",
+    "techno": [
+      { "name": "HTML", "img": "/icon/html.svg" },
+      { "name": "CSS", "img": "/icon/css.svg" },
+      { "name": "TypeScript", "img": "/icon/typescript.svg" },
+      { "name": "React", "img": "/icon/react.svg" },
+      { "name": "NodeJs", "img": "/icon/node.svg" },
+      { "name": "ExpressJs", "img": "/icon/express.svg" },
+      { "name": "MySQL", "img": "/icon/sql.svg" }
+    ],
+    "image": "/project/royal.svg",
+    "video": "https://youtube.com/embed/XKqZp2TdxZ8",
+    "poster": "/poster/royal.svg",
+    "format": "web",
+    "description": "Site web responsive et dynamique permettant de visualisé et réserver une activités ou une chambres dasn un hotel."
+  }
+]
