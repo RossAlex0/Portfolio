@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1.3rem;
   height: 30%;
 
   & h1 {
@@ -26,7 +26,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 8rem;
+  gap: 10rem;
 
   & .link_container {
     height: 64px;
@@ -76,10 +76,10 @@
   position: relative;
 
   & h2 {
-    margin-block: 2rem;
+    margin-block: 1.5rem;
     color: var(--text-color);
-    font-family: var(--poppins);
-    font-size: 36px;
+    font-family: var(--open-semibold);
+    font-size: 40px;
   }
 
   & form {
@@ -98,9 +98,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-color: #212121;
+      background-color: #21212193;
       gap: 2rem;
       position: relative;
+      box-sizing: border-box;
 
       & .input_container {
         width: 100%;
@@ -196,17 +197,14 @@
   }
 }
 .button_border {
-  height: 40px;
-  width: 32%;
-  background: var(--text-color);
+  min-height: 40px;
+  width: 28%;
+  margin-top: -4px;
+  background: var(--gradientleft-color);
   padding: 1px;
   border-radius: 32px;
   cursor: pointer;
   overflow: hidden;
-
-  &:hover {
-    background: var(--gradientleft-color);
-  }
 
   & .button_form {
     height: 100%;
@@ -232,9 +230,15 @@
 }
 
 .valide {
-  border: 1px solid #8afa8eb5;
+  border-left: 1px solid #8afa8eb5;
+}
+.refuse {
+  border-left: 1px solid #fa8aa8b5;
 }
 
+.opacity {
+  opacity: 0.5;
+}
 #labelTop {
   opacity: 1;
   color: rgb(190, 190, 190);
