@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 
 import { getProjectsFormat } from "../../services/utils/filterFormat";
 
-import chevron from "/icon/chevron.svg";
-
 import "./CardProject.css";
 
 export default function CardProject({ project, style }: ProjectPropsInterface) {
@@ -30,7 +28,20 @@ export default function CardProject({ project, style }: ProjectPropsInterface) {
         type="button"
         onClick={() => navigate(`/projects/${project.format}/${index}`)}
       >
-        Voir le projet <img src={chevron} alt="chevron" />
+        <i>V</i>
+        <i>o</i>
+        <i>i</i>
+        <i>r</i>
+        <i>&nbsp;</i>
+        <i>l</i>
+        <i>e</i>
+        <i>&nbsp;</i>
+        <i>p</i>
+        <i>r</i>
+        <i>o</i>
+        <i>j</i>
+        <i>e</i>
+        <i>t</i>
       </button>
     </div>
   );
