@@ -23,19 +23,29 @@
   }
 
   & a:last-child {
-    padding: 1px;
+    height: 40px;
+    width: 6.1rem;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     border-radius: 2rem;
     background: var(--gradientleft-color);
 
     & div {
+      height: 100%;
+      width: 100%;
       padding: 0.5rem 1rem;
       border-radius: 2rem;
       background: #000;
-      transition: box-shadow 0.1s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &:active {
-        box-shadow: inset 0px 7px 10px rgba(255, 255, 255, 0.3);
+        height: 96%;
+        width: 98%;
       }
 
       & p {
