@@ -13,7 +13,7 @@ export default function Home() {
         <div className="animationContainer_creative">
           <p> a </p>
           <p> creative </p>
-          <p> developer</p>
+          <p> developer.</p>
         </div>
       </div>
     </section>

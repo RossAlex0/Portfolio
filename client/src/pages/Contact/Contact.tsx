@@ -15,6 +15,8 @@ export default function Contact() {
 
   const [messageApi, setMessageApi] = useState<string | undefined>();
 
+  const emailRegex = /^[^@]+@[^@]+\.[^@]+$/;
+
   const handlePostEmail = async () => {
     const response = await postEmail(formEmail);
     console.info(response);
@@ -50,24 +52,25 @@ export default function Contact() {
         </div>
       </div>
       <div className="body_contact">
-        <h2>Envoyer moi un email !</h2>
+        <h2>✨ Écrivez-moi ! ✨</h2>
         <form>
           <div
             className={
               formEmail.message !== "" && formEmail.subject.length > 3
                 ? "block_inputs  valide"
-                : "block_inputs"
+                : "block_inputs refuse"
             }
           >
             <div className="input_container">
               <label id={formEmail.subject !== "" ? "labelTop" : ""}>
-                Objet du mail
+                Objet du mail*
               </label>
               <div className="input_border">
                 <input
                   value={formEmail.subject}
                   name="subject"
                   type="text"
+                  maxLength={80}
                   autoComplete="off"
                   onChange={(e) =>
                     setFormEmail({ ...formEmail, subject: e.target.value })
@@ -77,7 +80,7 @@ export default function Contact() {
             </div>
             <div className="input_container">
               <label id={formEmail.message !== "" ? "labelTop" : ""}>
-                Votre message
+                Votre message*
               </label>
               <div className="input_border_area">
                 <textarea
@@ -91,7 +94,15 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="block_inputs">
+          <div
+            className={
+              formEmail.email.length >= 6 &&
+              emailRegex.test(formEmail.email) &&
+              formEmail.name !== ""
+                ? "block_inputs  valide"
+                : "block_inputs refuse"
+            }
+          >
             <div className="input_container">
               <label id={formEmail.name !== "" ? "labelTop" : ""}>
                 Votre prénom{" "}
@@ -124,8 +135,27 @@ export default function Contact() {
                 />
               </div>
             </div>
-            <div className="button_border">
+            <div
+              className={
+                formEmail.email.length >= 6 &&
+                emailRegex.test(formEmail.email) &&
+                formEmail.name !== "" &&
+                formEmail.message !== "" &&
+                formEmail.subject.length > 3
+                  ? "button_border"
+                  : "button_border opacity"
+              }
+            >
               <button
+                disabled={
+                  !(
+                    formEmail.email.length >= 6 &&
+                    emailRegex.test(formEmail.email) &&
+                    formEmail.name !== "" &&
+                    formEmail.message !== "" &&
+                    formEmail.subject.length > 3
+                  )
+                }
                 type="button"
                 className="button_form"
                 onClick={handlePostEmail}
