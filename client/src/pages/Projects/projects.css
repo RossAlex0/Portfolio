@@ -64,10 +64,20 @@
 
   &:active {
     transform: scale(1);
+
+    img {
+      transform: scale(1.6);
+      transition: transform 0.5s ease-out;
+    }
   }
 }
-.rotate {
-  transform: rotate(180deg);
+
+.button_disabled {
+  width: 3rem;
+  background: none;
+  border: 1px solid var(--text-color);
+  padding-top: 0.2rem;
+  border-radius: 50%;
 }
 
 .project_cards {

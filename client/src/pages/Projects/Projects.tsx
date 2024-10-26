@@ -2,6 +2,7 @@ import CardProject from "../../components/CardProject/CardProject";
 import { ProjectInterface } from "../../components/CardProject/type";
 import projectsData from "../../services/data/projectsData.json";
 
+import rotatechevron from "/icon/rotawhithchevron.svg";
 import chevron from "/icon/whitechevron.svg";
 import "./projects.css";
 import { useRef, useState } from "react";
@@ -33,9 +34,9 @@ export default function Projects() {
   const handleMouseLess = () => {
     intervalIdRef.current = window.setInterval(() => {
       setPosition((prevPosition) => {
-        if (prevPosition === -230) {
+        if (prevPosition === -120) {
           handleMouseLeave();
-          return -230;
+          return -120;
         }
         return prevPosition - 10;
       });
@@ -54,12 +55,13 @@ export default function Projects() {
       <div className="project-buttons">
         <button
           type="button"
-          className="button_arrow"
+          className={position !== 0 ? "button_arrow" : "button_disabled"}
           onMouseDown={handleMouseMore}
           onMouseUp={handleMouseLeave}
           onMouseLeave={handleMouseLeave}
+          style={position === 0 ? { opacity: 0.5 } : {}}
         >
-          <img src={chevron} alt="arrow" className="rotate" />
+          <img src={rotatechevron} alt="arrow" draggable="false" />
         </button>
         <button
           type="button"
@@ -77,12 +79,13 @@ export default function Projects() {
         </button>
         <button
           type="button"
-          className="button_arrow"
+          className={position !== -120 ? "button_arrow" : "button_disabled"}
           onMouseDown={handleMouseLess}
           onMouseUp={handleMouseLeave}
           onMouseLeave={handleMouseLeave}
+          style={position === -120 ? { opacity: 0.5 } : {}}
         >
-          <img src={chevron} alt="arrow" />
+          <img src={chevron} alt="arrow" draggable="false" />
         </button>
       </div>
       <div className="project_cards">
