@@ -30,7 +30,7 @@ export default function Contact() {
     <section className="about">
       <div className="about_header">
         <h1>
-          Who <span>I am ?</span>
+          Qui <span>suis-je ?</span>
         </h1>
         <div>
           <img src={face} alt="rossignol alex" loading="lazy" />
