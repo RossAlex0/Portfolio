@@ -9,7 +9,7 @@ export default function Navbar() {
       <img src="/logo.svg" alt="AlexR" />
       <div className="navbar_navigation">
         <Link to={"/"} className={location.pathname === "/" ? "selected" : ""}>
-          Home
+          Acceuil
         </Link>
         <Link
           to={"/projects"}
@@ -17,13 +17,13 @@ export default function Navbar() {
             location.pathname.startsWith("/projects") ? "selected" : ""
           }
         >
-          Projects
+          Projets
         </Link>
         <Link
           to={"/about"}
           className={location.pathname === "/about" ? "selected" : ""}
         >
-          Who I am ?
+          Qui suis-je ?
         </Link>
         <Link to={"/contact"}>
           <div>
