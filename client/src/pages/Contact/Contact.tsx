@@ -63,7 +63,7 @@ export default function Contact() {
           >
             <div className="input_container">
               <label id={formEmail.subject !== "" ? "labelTop" : ""}>
-                Objet du mail*
+                Objet
               </label>
               <div className="input_border">
                 <input
@@ -80,7 +80,7 @@ export default function Contact() {
             </div>
             <div className="input_container">
               <label id={formEmail.message !== "" ? "labelTop" : ""}>
-                Votre message*
+                Votre message
               </label>
               <div className="input_border_area">
                 <textarea
@@ -105,7 +105,7 @@ export default function Contact() {
           >
             <div className="input_container">
               <label id={formEmail.name !== "" ? "labelTop" : ""}>
-                Votre prénom{" "}
+                Votre prénom
               </label>
               <div className="input_border">
                 <input
@@ -121,7 +121,7 @@ export default function Contact() {
             </div>
             <div className="input_container">
               <label id={formEmail.email !== "" ? "labelTop" : ""}>
-                Votre email{" "}
+                Votre email
               </label>
               <div className="input_border">
                 <input
