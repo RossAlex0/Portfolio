@@ -1,9 +1,8 @@
-import git from "/icon/github.svg";
-import cv from "/icon/cv.svg";
-import linkedin from "/icon/linkedin.svg";
-import "./contact.css";
 import { useState } from "react";
+
 import { postEmail } from "../../services/request/postEmail";
+
+import "./contact.css";
 
 export default function Contact() {
   const [formEmail, setFormEmail] = useState({
@@ -24,13 +23,13 @@ export default function Contact() {
     if (response) {
       setFormEmail({ name: "", email: "", subject: "", message: "" });
     }
-    setTimeout(() => setMessageApi(undefined), 10000);
+    setTimeout(() => setMessageApi(undefined), 8000);
   };
   return (
     <section className="contact">
       <div className="contact_header">
         <h1>Contact</h1>
-        <div className="contact_header_link">
+        {/* <div className="contact_header_link">
           <div className="link_container">
             <a href="https://github.com/RossAlex0" target="_blank">
               <img src={git} alt="github" />
@@ -49,10 +48,10 @@ export default function Contact() {
               <img src={linkedin} alt="linkedin" />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="body_contact">
-        <h2>✨ Écrivez-moi ! ✨</h2>
+        <h4>Envie d'en savoir plus ? Contactez moi n'hésitez pas !</h4>
         <form>
           <div
             className={
