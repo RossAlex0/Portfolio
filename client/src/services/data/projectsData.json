@@ -36,21 +36,6 @@
   },
   {
     "id": 2,
-    "name": "Pokedex",
-    "techno": [
-      { "name": "HTML", "img": "/icon/html.svg" },
-      { "name": "CSS", "img": "/icon/css.svg" },
-      { "name": "JavaScript", "img": "/icon/javascript.svg" },
-      { "name": "React", "img": "/icon/react.svg" }
-    ],
-    "image": "/project/poke.svg",
-    "video": "https://youtube.com/embed/qkV7XQq-_Y0",
-    "poster": "/poster/pokemon.svg",
-    "format": "web",
-    "description": "Site web responsive et dynamique réaliser en équipe permettant de visualiser ou rechercher des Pokémon par nom, type ou génération."
-  },
-  {
-    "id": 3,
     "name": "BudgetMade",
     "techno": [
       { "name": "TypeScript", "img": "/icon/typescript.svg" },
@@ -67,7 +52,7 @@
     "description": "Développement d'une application mobile cross-plateforme, permettant de gérer et visualiser les dépenses avec une catégorisation semi-automatisée."
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "RoyalBlue",
     "techno": [
       { "name": "HTML", "img": "/icon/html.svg" },
