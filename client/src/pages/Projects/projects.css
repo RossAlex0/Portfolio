@@ -89,8 +89,8 @@
   flex-direction: row;
   align-items: center;
   gap: var(--gap);
-  overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-y: visible;
+  overflow-x: visible;
 }
 
 /*  ANIMATION CARD COMING */
@@ -100,24 +100,27 @@
     animation: slideCards 2s ease-in-out;
   }
   & .card:nth-child(2) {
-    animation: slideCards 3s ease-in-out;
+    animation: slideCards 2.5s ease-in-out;
   }
   & .card:nth-child(3) {
-    animation: slideCards 4s ease-in-out;
+    animation: slideCards 3s ease-in-out;
   }
   & .card:nth-child(4) {
-    animation: slideCards 5s ease-in-out;
+    animation: slideCards 3.5s ease-in-out;
   }
   & .card:nth-child(5) {
-    animation: slideCards 6s ease-in-out;
+    animation: slideCards 4s ease-in-out;
   }
 }
 
 @keyframes slideCards {
   0% {
-    transform: rotate(25deg) translateY(120rem);
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.02);
   }
   100% {
-    transform: rotate(0deg) translateY(0);
+    transform: scale(1);
   }
 }
