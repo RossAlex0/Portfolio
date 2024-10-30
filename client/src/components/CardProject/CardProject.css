@@ -161,3 +161,16 @@
     }
   }
 }
+
+/* TABLET */
+
+@media (900px > width > 720px) {
+  .card {
+    height: 45%;
+    gap: 0.3rem;
+
+    & div {
+      height: 50%;
+    }
+  }
+}
