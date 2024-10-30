@@ -23,11 +23,19 @@ export default function Contact() {
             <img src={face} alt="rossignol alex" loading="lazy" />
           </div>
           <p>
-            {"<"} Autodidacte en reconversion professionnelle, passionné par le
-            développement et toujours de bonne humeur, je suis curieux, motivé à
-            progresser et prêt à découvrir de nouvelles technologies. Pour moi,
-            travailler en équipe est essentiel tout en étant capable de gérer
-            mes missions en autonomie. {"/>"}
+            <p>
+              Développeur autodidacte depuis maintenant deux ans, je crée des
+              sites web et applications mobiles
+            </p>
+            <p>
+              avec passion. Accompagner par ma conjointe product designeuse sur
+              laquelle je m'appuie pour
+            </p>
+            <p>
+              chaque maquette produite. Je suis en recherche constante de
+              nouvelles innovations pour
+            </p>
+            <p>optimiser et rendre accéssible chacune de mes créations.</p>
           </p>
         </div>
       </div>
