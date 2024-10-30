@@ -1,4 +1,4 @@
-.contact_header_link {
+.nav_desktop_link {
   display: flex;
   gap: 1rem;
   position: absolute;
@@ -36,6 +36,49 @@
     & img {
       height: 100%;
       width: 100%;
+    }
+  }
+}
+
+.burger {
+  & .burger_link {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+
+    & .link_container {
+      width: 20%;
+      display: flex;
+      opacity: 0.8;
+      transition: transform 1s linear, opacity 1s linear;
+
+      &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+
+    & a {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2px;
+      background: var(--gradienttop-color);
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px rgba(114, 180, 255, 0.3),
+        0px 0px 12px rgba(114, 255, 118, 0.2),
+        0px 0px 14px rgba(255, 244, 90, 0.25);
+
+      & img {
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 }
