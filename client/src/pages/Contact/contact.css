@@ -360,3 +360,41 @@
     transform: rotate(0deg);
   }
 }
+
+/* TABLET */
+
+@media (900px > width > 720px) {
+  .contact_header {
+    height: 40%;
+
+    & div {
+      height: 48px;
+      &:nth-child(3) {
+        margin-top: -1rem;
+      }
+
+      &:nth-child(3) p {
+        text-align: center;
+      }
+    }
+  }
+
+  .body_contact {
+    & form {
+      & .block_inputs {
+        width: 60%;
+      }
+    }
+  }
+
+  .text {
+    min-height: 48px;
+    max-height: 56px;
+  }
+
+  .button_border {
+    width: 60%;
+    min-height: 52px;
+    max-height: 56px;
+  }
+}
