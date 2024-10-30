@@ -168,6 +168,12 @@
       position: relative;
       box-sizing: border-box;
 
+      & .area {
+        height: 65%;
+      }
+      & .text {
+        height: 25%;
+      }
       & .input_container {
         width: 100%;
         position: relative;
@@ -203,7 +209,7 @@
         }
 
         & .input_border {
-          height: 44px;
+          height: 100%;
           width: 100%;
           background-color: var(--text-color);
           padding: 1px;
@@ -233,7 +239,7 @@
         }
 
         & .input_border_area {
-          height: 120px;
+          height: 100%;
           width: 100%;
           background: var(--text-color);
           padding: 1px;
@@ -262,7 +268,7 @@
   }
 }
 .button_border {
-  min-height: 40px;
+  height: 40px;
   width: 28%;
   margin-top: -4px;
   background: var(--gradientleft-color);

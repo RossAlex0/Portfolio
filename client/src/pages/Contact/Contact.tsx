@@ -62,7 +62,7 @@ export default function Contact() {
                 : "block_inputs refuse"
             }
           >
-            <div className="input_container">
+            <div className="input_container text">
               <label id={formEmail.subject !== "" ? "labelTop" : ""}>
                 Objet
               </label>
@@ -79,7 +79,7 @@ export default function Contact() {
                 />
               </div>
             </div>
-            <div className="input_container">
+            <div className="input_container area">
               <label id={formEmail.message !== "" ? "labelTop" : ""}>
                 Votre message
               </label>
@@ -104,7 +104,7 @@ export default function Contact() {
                 : "block_inputs refuse"
             }
           >
-            <div className="input_container">
+            <div className="input_container text">
               <label id={formEmail.name !== "" ? "labelTop" : ""}>
                 Votre prénom
               </label>
@@ -120,7 +120,7 @@ export default function Contact() {
                 />
               </div>
             </div>
-            <div className="input_container">
+            <div className="input_container text">
               <label id={formEmail.email !== "" ? "labelTop" : ""}>
                 Votre email
               </label>
