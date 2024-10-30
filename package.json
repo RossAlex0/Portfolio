@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "client": "npm --prefix client run dev",
-    "server": "npm --prefix api run dev",
-    "dev": "concurrently \"npm run client\" \"npm run server\"",
-    "build": "npm --prefix client run build && npm --prefix server run build"
+    "api": "npm --prefix api run dev",
+    "dev": "concurrently \"npm run client\" \"npm run api\"",
+    "build": "npm --prefix client run build && npm --prefix api run build"
   },
   "keywords": [],
   "author": "Rossignol Alex",
