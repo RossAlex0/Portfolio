@@ -145,3 +145,21 @@
     transform: scale(1);
   }
 }
+
+/*  TABLET */
+
+@media (900px > width > 720px) {
+  .project_cards {
+    height: 100%;
+    padding-inline: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: center;
+    gap: var(--gap);
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .project-buttons {
+    display: none;
+  }
+}
