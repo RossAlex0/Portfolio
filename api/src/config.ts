@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: process.env.APP_CLIENT_URL,
+    origin: "https://portfolio-eight-pi-20.vercel.app",
   })
 );
 
