@@ -98,18 +98,39 @@
 .project_cards {
   & .card:nth-child(1) {
     animation: slideCards 2s ease-in-out;
+    border-bottom: 1px solid #fff45a;
+    border-right: 1px solid #fff45a;
+
+    &:hover {
+      box-shadow: 2.5px 2.5px 5px #fff45a;
+    }
   }
   & .card:nth-child(2) {
     animation: slideCards 2.5s ease-in-out;
+    border-bottom: 1px solid #bbfa69;
+    border-right: 1px solid #bbfa69;
+
+    &:hover {
+      box-shadow: 2.5px 2.5px 5px #bbfa69;
+    }
   }
   & .card:nth-child(3) {
     animation: slideCards 3s ease-in-out;
+    border-bottom: 1px solid #72f48c;
+    border-right: 1px solid #72f48c;
+
+    &:hover {
+      box-shadow: 2.5px 2.5px 5px #72f48c;
+    }
   }
   & .card:nth-child(4) {
     animation: slideCards 3.5s ease-in-out;
-  }
-  & .card:nth-child(5) {
-    animation: slideCards 4s ease-in-out;
+    border-bottom: 1px solid #72c5e2;
+    border-right: 1px solid #72c5e2;
+
+    &:hover {
+      box-shadow: 2.5px 2.5px 5px #72c5e2;
+    }
   }
 }
 

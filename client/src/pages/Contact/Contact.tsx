@@ -29,29 +29,31 @@ export default function Contact() {
     <section className="contact">
       <div className="contact_header">
         <h1>Contact</h1>
-        {/* <div className="contact_header_link">
-          <div className="link_container">
-            <a href="https://github.com/RossAlex0" target="_blank">
-              <img src={git} alt="github" />
-            </a>
-          </div>
-          <div className="link_container link_down">
-            <a href="/CV.pdf" download="Rossignol_Alex_CV.pdf">
-              <img src={cv} alt="curriculomvitae" />
-            </a>
-          </div>
-          <div className="link_container">
-            <a
-              href="https://www.linkedin.com/in/rossignolalex/"
-              target="_blank"
-            >
-              <img src={linkedin} alt="linkedin" />
-            </a>
-          </div>
-        </div> */}
+        <div>
+          <p>
+            Envie de démarrer un <span>nouveau projet</span> ?
+          </p>
+        </div>
+        <div>
+          <p>
+            Vous êtes <span>professionel</span> ou <span>particulier</span> est
+            vous souhaitez élargir la visibilité de votre <span>marque</span>{" "}
+            sur internet ?
+          </p>
+        </div>
+        <div>
+          <p>
+            Vous êtes une <span>entreprise</span> et cherchez un profil en
+            particulier ?{" "}
+          </p>
+        </div>
+        <div>
+          <p>
+            Envie d'en savoir plus ? <span>Contactez moi</span> n'hésitez pas !
+          </p>
+        </div>
       </div>
       <div className="body_contact">
-        <h4>Envie d'en savoir plus ? Contactez moi n'hésitez pas !</h4>
         <form>
           <div
             className={
