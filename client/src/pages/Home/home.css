@@ -23,7 +23,7 @@
   & p:last-child {
     color: var(--text-color);
     font-family: var(--open-semibold);
-    font-size: clamp(1.5rem, 2vw + 2rem, 4rem);
+    font-size: clamp(1rem, 1vw + 2rem, 4rem);
 
     transition: transform 1.5s ease-in;
   }
@@ -38,12 +38,12 @@
   & p:not(:nth-child(2)) {
     color: var(--text-color);
     font-family: var(--poppins);
-    font-size: clamp(1.5rem, 2vw + 2rem, 4rem);
+    font-size: clamp(1rem, 1vw + 2rem, 4rem);
   }
 
   & p:nth-child(2) {
     font-family: var(--poppins);
-    font-size: clamp(1.5rem, 2vw + 2rem, 4rem);
+    font-size: clamp(1rem, 1vw + 2rem, 4rem);
 
     background-image: linear-gradient(
       125deg,
@@ -192,5 +192,36 @@
   }
   100% {
     background-position: 100% 100%;
+  }
+}
+
+@media (width < 720px) {
+  .home {
+    & .home_container {
+      height: auto;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      & .home_creative {
+        width: auto;
+
+        & .animationContainer_creative {
+          display: flex;
+          flex-wrap: wrap;
+
+          & p {
+            width: auto;
+          }
+
+          & p:last-child {
+            margin-top: -1.2rem;
+          }
+        }
+      }
+      & .home_name {
+        width: 100%;
+      }
+    }
   }
 }

@@ -85,8 +85,9 @@
   backdrop-filter: blur(8px);
   z-index: 4;
   display: flex;
+  opacity: 0;
   justify-content: flex-end;
-  transition: transform 1.5s;
+  transition: transform 1.5s opacity 1s;
   transform: translateX(100%);
 }
 
@@ -126,5 +127,43 @@
 }
 
 .active {
-  transform: translateX(0); /* Position visible */
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media (width < 720px) {
+  .burger {
+    & img {
+      width: 30%;
+    }
+  }
+
+  .burger_btn {
+    & .bar1 {
+      height: 4px;
+    }
+
+    & .bar2 {
+      height: 4px;
+    }
+
+    & .bar3_h {
+      height: 4px;
+    }
+
+    & .bar4 {
+      height: 4px;
+    }
+  }
+
+  .burger_list_element {
+    padding: 4rem 0 4rem 3rem;
+    & ul {
+      & li {
+        & a {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
 }

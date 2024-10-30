@@ -154,12 +154,28 @@
     padding-inline: 0.5rem;
     padding-bottom: 0.5rem;
     justify-content: center;
-    gap: var(--gap);
+    gap: 5%;
     flex-wrap: wrap;
     overflow-y: hidden;
     overflow-x: hidden;
   }
   .project-buttons {
     display: none;
+  }
+}
+
+@media (width < 720px) {
+  .project_header {
+    & h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .card {
+    & h2 {
+      font-size: 20px;
+    }
+    & p {
+      font-size: 12px;
+    }
   }
 }

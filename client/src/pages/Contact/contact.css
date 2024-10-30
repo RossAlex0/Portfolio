@@ -378,23 +378,41 @@
       }
     }
   }
+  .messageApi {
+    width: 40%;
+    top: 85%;
+    left: 20%;
+    background-color: #212121;
+  }
+}
 
-  .body_contact {
-    & form {
-      & .block_inputs {
-        width: 60%;
+@media (width < 720px) {
+  .contact {
+    height: auto;
+  }
+  .contact_header {
+    height: auto;
+
+    & h1 {
+      font-size: 2.5rem;
+    }
+
+    & div {
+      height: 64px;
+      &:nth-child(3) {
+        margin-top: -1rem;
+      }
+
+      & p {
+        text-align: center;
+        height: 64px;
+        transform: translateY(-5rem);
       }
     }
   }
-
-  .text {
-    min-height: 48px;
-    max-height: 56px;
-  }
-
-  .button_border {
+  .messageApi {
     width: 60%;
-    min-height: 52px;
-    max-height: 56px;
+    top: 50%;
+    background-color: #212121;
   }
 }

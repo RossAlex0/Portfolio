@@ -82,3 +82,18 @@
     }
   }
 }
+
+@media (width < 720px) {
+  .burger {
+    & .burger_link {
+      width: 90%;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 1rem;
+
+      & .link_container {
+        width: 30%;
+      }
+    }
+  }
+}
