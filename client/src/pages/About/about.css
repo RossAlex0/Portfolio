@@ -276,3 +276,38 @@
     }
   }
 }
+
+@media (width < 720px) {
+  .about_header {
+    height: auto;
+    width: 100%;
+
+    & h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    & div {
+      width: 100%;
+      flex-direction: column;
+
+      & p {
+        text-wrap: wrap;
+        text-align: center;
+      }
+    }
+  }
+
+  .body_skill {
+    height: auto;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+
+    & .skill_container {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}
