@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-import config from "./config";
+import config from "./src/config";
 
 const app = config;
 
