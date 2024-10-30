@@ -16,9 +16,7 @@ export default function Contact() {
     message: "",
   });
 
-  const [messageApi, setMessageApi] = useState<string | undefined>(
-    "salut qjibghqzb pqizrgb qbgirzb giqzbg ib rééssayer"
-  );
+  const [messageApi, setMessageApi] = useState<string | undefined>();
 
   const handlePostEmail = async () => {
     const response = await postEmail(formEmail);
