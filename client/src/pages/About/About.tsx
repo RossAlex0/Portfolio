@@ -1,3 +1,5 @@
+import useScreenWidth from "../../services/hook/useScreenWodth";
+
 import js from "/icon/javascript.svg";
 import ts from "/icon/typescript.svg";
 import react from "/icon/react.svg";
@@ -12,6 +14,8 @@ import expo from "/icon/expo.svg";
 import "./about.css";
 
 export default function Contact() {
+  const screenWidth = useScreenWidth();
+
   return (
     <section className="about">
       <div className="about_header">
@@ -22,21 +26,32 @@ export default function Contact() {
           <div>
             <img src={face} alt="rossignol alex" loading="lazy" />
           </div>
-          <p>
+          {screenWidth > 900 ? (
+            <p>
+              <p>
+                Développeur autodidacte depuis maintenant deux ans, je crée des
+                sites web et applications mobiles
+              </p>
+              <p>
+                avec passion. Accompagner par ma conjointe product designeuse
+                sur laquelle je m'appuie pour
+              </p>
+              <p>
+                chaque maquette produite. Je suis en recherche constante de
+                nouvelles innovations pour
+              </p>
+              <p>optimiser et rendre accéssible chacune de mes créations.</p>
+            </p>
+          ) : (
             <p>
               Développeur autodidacte depuis maintenant deux ans, je crée des
-              sites web et applications mobiles
+              sites web et applications mobiles avec passion. Accompagner par ma
+              conjointe product designeuse sur laquelle je m'appuie pour chaque
+              maquette produite. Je suis en recherche constante de nouvelles
+              innovations pour optimiser et rendre accéssible chacune de mes
+              créations.
             </p>
-            <p>
-              avec passion. Accompagner par ma conjointe product designeuse sur
-              laquelle je m'appuie pour
-            </p>
-            <p>
-              chaque maquette produite. Je suis en recherche constante de
-              nouvelles innovations pour
-            </p>
-            <p>optimiser et rendre accéssible chacune de mes créations.</p>
-          </p>
+          )}
         </div>
       </div>
       <div className="body_skill">
