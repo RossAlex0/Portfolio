@@ -6,7 +6,7 @@ import "./buttonLink.css";
 
 export default function ButtonLink() {
   return (
-    <div className="contact_header_link">
+    <>
       <div className="link_container">
         <a href="https://github.com/RossAlex0" target="_blank">
           <img src={git} alt="github" />
@@ -22,6 +22,6 @@ export default function ButtonLink() {
           <img src={linkedin} alt="linkedin" />
         </a>
       </div>
-    </div>
+    </>
   );
 }
