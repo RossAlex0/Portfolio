@@ -90,7 +90,7 @@
   align-items: center;
   gap: var(--gap);
   overflow-y: visible;
-  overflow-x: visible;
+  overflow-x: scroll;
 }
 
 /*  ANIMATION CARD COMING */
