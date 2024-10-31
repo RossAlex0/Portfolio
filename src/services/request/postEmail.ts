@@ -1,4 +1,4 @@
-import axios from "axios";
+import { myPath } from "./instance";
 import { RequestEmail } from "./typeRequest";
 
 interface Error {
@@ -6,8 +6,8 @@ interface Error {
 }
 
 export const postEmail = async (request: RequestEmail) => {
-  return axios
-    .post("/api/send-email", request)
+  return myPath
+    .post("/send-email", request)
     .then((response) => response.data.message)
     .catch((error) => {
       console.error(
