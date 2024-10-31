@@ -203,6 +203,14 @@
       display: flex;
       flex-wrap: wrap;
 
+      & .home_name {
+        .animationContainer_name {
+          & p {
+            animation: none;
+          }
+        }
+      }
+
       & .home_creative {
         width: auto;
 
@@ -222,6 +230,21 @@
       & .home_name {
         width: 100%;
       }
+    }
+  }
+  .animationContainer_name::before {
+    display: none;
+  }
+  .animationContainer_creative {
+    &::before {
+      display: none;
+    }
+    & p:not(:nth-child(2)) {
+      animation: none;
+    }
+
+    & p:nth-child(2) {
+      animation: stepColor 9s ease-in-out infinite;
     }
   }
 }

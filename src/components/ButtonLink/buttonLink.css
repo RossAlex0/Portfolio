@@ -88,11 +88,11 @@
     & .burger_link {
       width: 90%;
       display: flex;
-      justify-content: space-evenly;
-      gap: 1rem;
+      justify-content: flex-start;
+      gap: 1.5rem;
 
       & .link_container {
-        width: 30%;
+        width: 23%;
       }
     }
   }
