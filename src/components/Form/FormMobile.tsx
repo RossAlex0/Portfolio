@@ -1,4 +1,11 @@
-import { FormInterface } from "./type";
+import { FormInterface, FormLanguage } from "./type";
+
+import translate from "../../services/data/translate.json";
+import { useContext } from "react";
+import {
+  LanguageContext,
+  LanguageContextInterface,
+} from "../../services/context/languageContext";
 
 import "./form.css";
 
@@ -7,6 +14,9 @@ export default function FormMobile({
   setFormEmail,
   handlePostEmail,
 }: FormInterface) {
+  const { language } = useContext(LanguageContext) as LanguageContextInterface;
+  const t: FormLanguage = translate.form;
+
   const emailRegex = /^[^@]+@[^@]+\.[^@]+$/;
 
   return (
@@ -24,7 +34,7 @@ export default function FormMobile({
       >
         <div className="input_container text">
           <label id={formEmail.name !== "" ? "labelTop" : ""}>
-            Votre prénom
+            {t.name[language]}
           </label>
           <div className="input_border">
             <input
@@ -40,7 +50,7 @@ export default function FormMobile({
         </div>
         <div className="input_container text">
           <label id={formEmail.email !== "" ? "labelTop" : ""}>
-            Votre email
+            {t.email[language]}
           </label>
           <div className="input_border">
             <input
@@ -55,7 +65,9 @@ export default function FormMobile({
           </div>
         </div>
         <div className="input_container text">
-          <label id={formEmail.subject !== "" ? "labelTop" : ""}>Objet</label>
+          <label id={formEmail.subject !== "" ? "labelTop" : ""}>
+            {t.subject[language]}
+          </label>
           <div className="input_border">
             <input
               value={formEmail.subject}
@@ -71,7 +83,7 @@ export default function FormMobile({
         </div>
         <div className="input_container area">
           <label id={formEmail.message !== "" ? "labelTop" : ""}>
-            Votre message
+            {t.message[language]}
           </label>
           <div className="input_border_area">
             <textarea
@@ -109,7 +121,7 @@ export default function FormMobile({
             className="button_form"
             onClick={handlePostEmail}
           >
-            <p>Envoyer</p>
+            <p>{t.btn[language]}</p>
           </button>
         </div>
       </form>

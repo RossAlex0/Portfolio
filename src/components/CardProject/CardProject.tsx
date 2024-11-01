@@ -5,9 +5,11 @@ import { useEffect, useState } from "react";
 import { getProjectsFormat } from "../../services/utils/filterFormat";
 
 import "./CardProject.css";
+import useScreenWidth from "../../services/hook/useScreenWodth";
 
 export default function CardProject({ project }: ProjectPropsInterface) {
   const navigate = useNavigate();
+  const screenWidth = useScreenWidth();
 
   const [index, setIndex] = useState<number>();
 
@@ -20,7 +22,12 @@ export default function CardProject({ project }: ProjectPropsInterface) {
   }, [project]);
 
   return (
-    <div className="card">
+    <div
+      className="card"
+      onClick={() =>
+        screenWidth < 1024 && navigate(`/projects/${project.format}/${index}`)
+      }
+    >
       <div style={{ backgroundImage: `url(${project.image})` }} />
       <div className="absolute">
         <h2>{project.name}</h2>

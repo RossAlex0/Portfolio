@@ -6,7 +6,7 @@ export interface ProjectInterface {
   video: string;
   poster: string;
   format: string;
-  description: string;
+  description: Translate;
 }
 
 export interface ProjectPropsInterface {
@@ -16,4 +16,9 @@ export interface ProjectPropsInterface {
 export interface Techno {
   name: string;
   img: string;
+}
+
+export interface Translate {
+  fr: string;
+  en: string;
 }
