@@ -42,7 +42,8 @@
 
 .burger {
   & .burger_link {
-    width: 90%;
+    width: 100%;
+    margin-top: -5rem;
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
