@@ -81,10 +81,12 @@
 }
 
 .project_cards {
-  height: 100%;
-  width: 80%;
+  height: auto;
+  width: 100%;
+  max-width: 1050px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-top: 2rem;
 }
 
@@ -104,10 +106,11 @@
 }
 
 .swiper {
-  height: 90%;
+  height: 100%;
   width: 100%;
+  margin: 0 !important;
   display: flex !important;
-  justify-content: space-between !important;
+  justify-content: center !important;
 }
 
 .swiper-slide {
@@ -125,7 +128,7 @@
 }
 .swiper-wrapper {
   height: 100%;
-  width: 100%;
+  width: 100% !important;
 }
 .swiper-button-next,
 .swiper-button-prev {
