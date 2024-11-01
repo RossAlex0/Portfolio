@@ -45,11 +45,9 @@ export default function Contact() {
           ) : (
             <p>
               Développeur autodidacte depuis maintenant deux ans, je crée des
-              sites web et applications mobiles avec passion. Accompagner par ma
-              conjointe product designeuse sur laquelle je m'appuie pour chaque
-              maquette produite. Je suis en recherche constante de nouvelles
-              innovations pour optimiser et rendre accéssible chacune de mes
-              créations.
+              sites web et applications mobiles avec passion. Je suis en
+              recherche constante de nouvelles innovations pour optimiser et
+              rendre accéssible chacune de mes créations.
             </p>
           )}
         </div>
