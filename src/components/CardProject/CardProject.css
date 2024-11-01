@@ -33,11 +33,12 @@
     & h2 {
       width: fit-content;
       font-family: var(--open-semibold);
-      background-color: #212121ce;
-      font-size: 1rem;
+      background-color: #ffffffce;
+      font-size: 1.3rem;
       border-radius: 32px;
-      color: white;
+      color: #212121;
       padding: 0.5rem 1rem;
+      border: 1px solid #212121;
     }
 
     & button {

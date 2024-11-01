@@ -1,0 +1,158 @@
+{
+  "home": {
+    "first": {
+      "fr": "Salut, moi c'est Alex",
+      "en": "Hello, I'm Alex"
+    },
+    "seconde": {
+      "fr": "un",
+      "en": "a"
+    },
+    "anim": {
+      "fr": "developpeur",
+      "en": "creative"
+    },
+    "last": {
+      "fr": "passioné.",
+      "en": "developer."
+    }
+  },
+  "navbar": {
+    "accueil": {
+      "fr": "Accueil",
+      "en": "Home"
+    },
+    "projets": {
+      "fr": "Projets",
+      "en": "Projects"
+    },
+    "about": {
+      "fr": "Qui suis-je ?",
+      "en": "Who I am"
+    }
+  },
+  "projects": {
+    "title": {
+      "fr": "Projets",
+      "en": "Projects"
+    }
+  },
+  "about": {
+    "titlefirst": {
+      "fr": "Qui",
+      "en": "Who"
+    },
+    "titleend": {
+      "fr": "suis-je ?",
+      "en": "I am ?"
+    },
+    "p1": {
+      "fr": "Développeur autodidacte depuis maintenant deux ans, je crée des sites web et applications mobiles",
+      "en": "Self-taught developer for the past two years, I create websites and mobile apps."
+    },
+    "p2": {
+      "fr": "avec passion. J'attache une grande importance à la réalisation de l'interface et à l'expérience utilisateur pour",
+      "en": "with passion. I place great importance on crafting the interface and enhancing the user experience to"
+    },
+    "p3": {
+      "fr": "chaque maquette produite. Je suis en recherche constante de nouvelles innovations pour",
+      "en": "each design I produce. I am constantly seeking new innovations to"
+    },
+    "p4": {
+      "fr": "optimiser et rendre accéssible chacune de mes créations.",
+      "en": "optimize and make each of my creations accessible."
+    },
+    "pglobals": {
+      "fr": "Développeur autodidacte depuis maintenant deux ans, je crée des sites web et applications mobiles avec passion. Je suis en recherche constante de nouvelles innovations pour optimiser et rendre accéssible chacune de mes créations.",
+      "en": "Self-taught developer for the past two years, I passionately create websites and mobile apps. I am constantly seeking new innovations to optimize and make each of my creations accessible."
+    },
+    "tools": {
+      "fr": "Outils",
+      "en": "Tools"
+    }
+  },
+  "contact": {
+    "p1first": {
+      "fr": "Envie de démarrer un",
+      "en": "Want to start a"
+    },
+    "p1end": {
+      "fr": "nouveau projet",
+      "en": "new project"
+    },
+    "p2star": {
+      "fr": "Vous êtes",
+      "en": "You are"
+    },
+    "p22": {
+      "fr": "professionel",
+      "en": "professional"
+    },
+    "p23": {
+      "fr": "ou",
+      "en": "or"
+    },
+    "p24": {
+      "fr": "particulier",
+      "en": "a private client"
+    },
+    "p25": {
+      "fr": "et vous souhaitez élargir la visibilité de votre",
+      "en": "and you want to expand the visibility of your"
+    },
+    "p26": {
+      "fr": "marque",
+      "en": "brand"
+    },
+    "p27": {
+      "fr": "sur internet ?",
+      "en": "on the internet?"
+    },
+    "p31": {
+      "fr": "Vous êtes une",
+      "en": "You are a"
+    },
+    "p32": {
+      "fr": "entreprise",
+      "en": "business"
+    },
+    "p33": {
+      "fr": "et cherchez un profil en particulier ?",
+      "en": "and are looking for a specific profile ?"
+    },
+    "p41": {
+      "fr": "Envie d'en savoir plus ?",
+      "en": "Want to know more?"
+    },
+    "p42": {
+      "fr": "Contactez moi",
+      "en": "Contact me"
+    },
+    "p43": {
+      "fr": "n'hésitez pas !",
+      "en": "feel free !"
+    }
+  },
+  "form": {
+    "name": {
+      "fr": "Votre prénom",
+      "en": "Your name"
+    },
+    "email": {
+      "fr": "Votre email",
+      "en": "Your email"
+    },
+    "subject": {
+      "fr": "Objet",
+      "en": "Subject"
+    },
+    "message": {
+      "fr": "Votre message",
+      "en": "Your message"
+    },
+    "btn": {
+      "fr": "Envoyer",
+      "en": "Send"
+    }
+  }
+}
