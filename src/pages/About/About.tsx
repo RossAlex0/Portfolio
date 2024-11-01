@@ -33,8 +33,8 @@ export default function Contact() {
                 sites web et applications mobiles
               </p>
               <p>
-                avec passion. Accompagner par ma conjointe product designeuse
-                sur laquelle je m'appuie pour
+                avec passion. J'attache une grande importance à la réalisation
+                de l'interface et à l'expérience utilisateur pour
               </p>
               <p>
                 chaque maquette produite. Je suis en recherche constante de
