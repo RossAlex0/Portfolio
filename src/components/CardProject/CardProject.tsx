@@ -22,27 +22,28 @@ export default function CardProject({ project }: ProjectPropsInterface) {
   return (
     <div className="card">
       <div style={{ backgroundImage: `url(${project.image})` }} />
-      <h2>{project.name}</h2>
-      <p>{project.description}</p>
-      <button
-        type="button"
-        onClick={() => navigate(`/projects/${project.format}/${index}`)}
-      >
-        <i>V</i>
-        <i>o</i>
-        <i>i</i>
-        <i>r</i>
-        <i>&nbsp;</i>
-        <i>l</i>
-        <i>e</i>
-        <i>&nbsp;</i>
-        <i>p</i>
-        <i>r</i>
-        <i>o</i>
-        <i>j</i>
-        <i>e</i>
-        <i>t</i>
-      </button>
+      <div className="absolute">
+        <h2>{project.name}</h2>
+        <button
+          type="button"
+          onClick={() => navigate(`/projects/${project.format}/${index}`)}
+        >
+          <i>V</i>
+          <i>o</i>
+          <i>i</i>
+          <i>r</i>
+          <i>&nbsp;</i>
+          <i>l</i>
+          <i>e</i>
+          <i>&nbsp;</i>
+          <i>p</i>
+          <i>r</i>
+          <i>o</i>
+          <i>j</i>
+          <i>e</i>
+          <i>t</i>
+        </button>
+      </div>
     </div>
   );
 }
