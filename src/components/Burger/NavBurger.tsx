@@ -38,7 +38,7 @@ export default function NavBurger() {
                 onClick={() => setIsActive(false)}
                 className={location.pathname === "/" ? "selected" : ""}
               >
-                Acceuil
+                Accueil
               </Link>
             </li>
             <li>
