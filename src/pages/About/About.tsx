@@ -1,4 +1,5 @@
 import useScreenWidth from "../../services/hook/useScreenWodth";
+import translate from "../../services/data/translate.json";
 
 import js from "/icon/javascript.svg";
 import ts from "/icon/typescript.svg";
@@ -12,15 +13,25 @@ import git from "/icon/git.svg";
 import jest from "/icon/jest.svg";
 import expo from "/icon/expo.svg";
 import "./about.css";
+import { AboutLangugage } from "./type";
+import { useContext } from "react";
+import {
+  LanguageContext,
+  LanguageContextInterface,
+} from "../../services/context/languageContext";
 
 export default function Contact() {
+  const { language } = useContext(LanguageContext) as LanguageContextInterface;
+
   const screenWidth = useScreenWidth();
+
+  const t: AboutLangugage = translate.about;
 
   return (
     <section className="about">
       <div className="about_header">
         <h1>
-          Qui <span>suis-je ?</span>
+          {t.titlefirst[language]} <span>{t.titleend[language]}</span>
         </h1>
         <div>
           <div>
@@ -28,27 +39,13 @@ export default function Contact() {
           </div>
           {screenWidth > 900 ? (
             <p>
-              <p>
-                Développeur autodidacte depuis maintenant deux ans, je crée des
-                sites web et applications mobiles
-              </p>
-              <p>
-                avec passion. J'attache une grande importance à la réalisation
-                de l'interface et à l'expérience utilisateur pour
-              </p>
-              <p>
-                chaque maquette produite. Je suis en recherche constante de
-                nouvelles innovations pour
-              </p>
-              <p>optimiser et rendre accéssible chacune de mes créations.</p>
+              <p>{t.p1[language]}</p>
+              <p>{t.p2[language]}</p>
+              <p>{t.p3[language]}</p>
+              <p>{t.p4[language]}</p>
             </p>
           ) : (
-            <p>
-              Développeur autodidacte depuis maintenant deux ans, je crée des
-              sites web et applications mobiles avec passion. Je suis en
-              recherche constante de nouvelles innovations pour optimiser et
-              rendre accéssible chacune de mes créations.
-            </p>
+            <p>{t.pglobals[language]}</p>
           )}
         </div>
       </div>
@@ -137,7 +134,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="skill_container">
-          <h3>Outils</h3>
+          <h3>{t.tools[language]}</h3>
           <div className="icon_container">
             <div className="skill_icon">
               <span className="figma"></span>

@@ -1,6 +1,6 @@
 import React, { createContext, useState, useMemo } from "react";
 
-interface LanguageContextInterface {
+export interface LanguageContextInterface {
   language: "fr" | "en";
   setLanguage: (language: "fr" | "en") => void;
 }

@@ -1,14 +1,25 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import { postEmail } from "../../services/request/postEmail";
+import { ContactLanguage } from "./type";
+import {
+  LanguageContext,
+  LanguageContextInterface,
+} from "../../services/context/languageContext";
+import translate from "../../services/data/translate.json";
 
-import "./contact.css";
 import useScreenWidth from "../../services/hook/useScreenWodth";
 import FormDesktop from "../../components/Form/FormDesktop";
 import FormMobile from "../../components/Form/FormMobile";
 
+import "./contact.css";
+
 export default function Contact() {
+  const { language } = useContext(LanguageContext) as LanguageContextInterface;
+  const t: ContactLanguage = translate.contact;
+
   const screenWidth = useScreenWidth();
+
   const [formEmail, setFormEmail] = useState({
     name: "",
     email: "",
@@ -27,31 +38,31 @@ export default function Contact() {
     }
     setTimeout(() => setMessageApi(undefined), 8000);
   };
+
   return (
     <section className="contact">
       <div className="contact_header">
         <h1>Contact</h1>
         <div>
           <p>
-            Envie de démarrer un <span>nouveau projet</span> ?
+            {t.p1first[language]} <span>{t.p1end[language]}</span> ?
           </p>
         </div>
         <div>
           <p>
-            Vous êtes <span>professionel</span> ou <span>particulier</span> est
-            vous souhaitez élargir la visibilité de votre <span>marque</span>{" "}
-            sur internet ?
+            {t.p2star[language]} <span>{t.p22[language]}</span>{" "}
+            {t.p23[language]} <span>{t.p24[language]}</span> {t.p25[language]}{" "}
+            <span>{t.p26[language]}</span> {t.p27[language]}
           </p>
         </div>
         <div>
           <p>
-            Vous êtes une <span>entreprise</span> et cherchez un profil en
-            particulier ?{" "}
+            {t.p31[language]} <span>{t.p32[language]}</span> {t.p33[language]}{" "}
           </p>
         </div>
         <div>
           <p>
-            Envie d'en savoir plus ? <span>Contactez moi</span> n'hésitez pas !
+            {t.p41[language]} <span>{t.p42[language]}</span> {t.p43[language]}
           </p>
         </div>
       </div>
