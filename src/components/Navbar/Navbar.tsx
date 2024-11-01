@@ -9,7 +9,7 @@ export default function Navbar() {
       <img src="/logo.svg" alt="AlexR" />
       <div className="navbar_navigation">
         <Link to={"/"} className={location.pathname === "/" ? "selected" : ""}>
-          Acceuil
+          Accueil
         </Link>
         <Link
           to={"/projects"}
