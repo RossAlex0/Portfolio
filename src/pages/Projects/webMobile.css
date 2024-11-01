@@ -336,16 +336,90 @@
   }
 
   .project_button {
+    & button {
+      font-size: 16px;
+      width: 11rem;
+    }
     & button:first-child {
       position: absolute;
-      left: 28%;
+      left: 25%;
       top: 87%;
     }
 
     & button:last-child {
       position: absolute;
-      right: 28%;
+      right: 25%;
       top: 87%;
+    }
+  }
+}
+
+@media (width < 720px) {
+  .project {
+    & h2 {
+      font-size: 2rem;
+      margin-top: 0.2rem;
+    }
+
+    & .project_back {
+      left: 1rem;
+      & img {
+        width: 1rem;
+      }
+    }
+
+    & p {
+      width: 100%;
+    }
+  }
+
+  .project_mobile {
+    flex-direction: column;
+    height: auto;
+    margin-top: 2rem;
+
+    & .project_movie_mobile,
+    .project_movie {
+      height: auto;
+      min-height: 60vh;
+    }
+  }
+
+  .project_techno_mobile {
+    width: 80%;
+
+    & .techno_border_mobile {
+      gap: 0.5rem;
+    }
+  }
+
+  .project_web {
+    height: auto;
+  }
+  .project_techno {
+    width: 100%;
+    min-width: 100%;
+
+    & .techno_border {
+      height: auto;
+      flex-wrap: wrap;
+    }
+  }
+
+  .project_button,
+  .project_button_web {
+    width: 100%;
+    padding-bottom: 4rem;
+    & button {
+      position: relative !important;
+    }
+  }
+
+  .project_web {
+    & .project_movie {
+      min-width: 100%;
+      height: auto;
+      min-height: 50vh;
     }
   }
 }
