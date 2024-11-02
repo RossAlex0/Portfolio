@@ -14,21 +14,23 @@ export default function Home() {
   const t: HomeLanguage = translate.home;
 
   return (
-    <section className="home">
-      <div className="home_container">
-        <div className="home_name">
-          <div className="animationContainer_name">
-            <p>{t.first[language]}</p>
+    language && (
+      <section className="home">
+        <div className="home_container">
+          <div className="home_name">
+            <div className="animationContainer_name">
+              <p>{t.first[language]}</p>
+            </div>
+          </div>
+          <div className="home_creative">
+            <div className="animationContainer_creative">
+              <p> {t.seconde[language]} </p>
+              <p> {t.anim[language]} </p>
+              <p> {t.last[language]}</p>
+            </div>
           </div>
         </div>
-        <div className="home_creative">
-          <div className="animationContainer_creative">
-            <p> {t.seconde[language]} </p>
-            <p> {t.anim[language]} </p>
-            <p> {t.last[language]}</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    )
   );
 }

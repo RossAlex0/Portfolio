@@ -32,50 +32,52 @@ export default function ProjectsWeb() {
     projectIndex > 0 ? setProjectIndex(projectIndex - 1) : null;
 
   return (
-    <div className="project">
-      <button
-        type="button"
-        className="project_back"
-        onClick={() => navigate("/projects")}
-      >
-        <img src={chevron} alt="chevron" />
-        {screenWidth < 720 ? "" : "Retour"}
-      </button>
-      <h2>{visibleProject.name}</h2>
-      <p>{visibleProject.description[language]}</p>
-      <div className="project_web">
-        <div className="project_movie">
-          <iframe
-            width="100%"
-            height="100%"
-            src={visibleProject?.video}
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            style={{ overflow: "hidden", borderRadius: 22 }}
-          />
-        </div>
-        <div className="project_techno">
-          <div className="techno_border">
-            {visibleProject.techno.map((language) => (
-              <div key={language.name}>
-                <img src={`${language.img}`} alt="technologies" />
-                <p>{language.name}</p>
-              </div>
-            ))}
+    language && (
+      <div className="project">
+        <button
+          type="button"
+          className="project_back"
+          onClick={() => navigate("/projects")}
+        >
+          <img src={chevron} alt="chevron" />
+          {screenWidth < 720 ? "" : "Retour"}
+        </button>
+        <h2>{visibleProject.name}</h2>
+        <p>{visibleProject.description[language]}</p>
+        <div className="project_web">
+          <div className="project_movie">
+            <iframe
+              width="100%"
+              height="100%"
+              src={visibleProject?.video}
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ overflow: "hidden", borderRadius: 22 }}
+            />
+          </div>
+          <div className="project_techno">
+            <div className="techno_border">
+              {visibleProject.techno.map((language) => (
+                <div key={language.name}>
+                  <img src={`${language.img}`} alt="technologies" />
+                  <p>{language.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
+        <div className="project_button_web">
+          <button type="button" onClick={handleClickPrev}>
+            <img src={chevron} alt="chevron" />
+            Projet précèdent
+          </button>
+          <button type="button" onClick={handleClickNext}>
+            Projet suivant
+            <img src={chevron} alt="chevron" />
+          </button>
+        </div>
       </div>
-      <div className="project_button_web">
-        <button type="button" onClick={handleClickPrev}>
-          <img src={chevron} alt="chevron" />
-          Projet précèdent
-        </button>
-        <button type="button" onClick={handleClickNext}>
-          Projet suivant
-          <img src={chevron} alt="chevron" />
-        </button>
-      </div>
-    </div>
+    )
   );
 }

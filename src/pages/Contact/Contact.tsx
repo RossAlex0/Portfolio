@@ -40,55 +40,57 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact">
-      <div className="contact_header">
-        <h1>Contact</h1>
-        <div>
-          <p>
-            {t.p1first[language]} <span>{t.p1end[language]}</span> ?
-          </p>
+    language && (
+      <section className="contact">
+        <div className="contact_header">
+          <h1>Contact</h1>
+          <div>
+            <p>
+              {t.p1first[language]} <span>{t.p1end[language]}</span> ?
+            </p>
+          </div>
+          <div>
+            <p>
+              {t.p2star[language]} <span>{t.p22[language]}</span>{" "}
+              {t.p23[language]} <span>{t.p24[language]}</span> {t.p25[language]}{" "}
+              <span>{t.p26[language]}</span> {t.p27[language]}
+            </p>
+          </div>
+          <div>
+            <p>
+              {t.p31[language]} <span>{t.p32[language]}</span> {t.p33[language]}{" "}
+            </p>
+          </div>
+          <div>
+            <p>
+              {t.p41[language]} <span>{t.p42[language]}</span> {t.p43[language]}
+            </p>
+          </div>
         </div>
-        <div>
-          <p>
-            {t.p2star[language]} <span>{t.p22[language]}</span>{" "}
-            {t.p23[language]} <span>{t.p24[language]}</span> {t.p25[language]}{" "}
-            <span>{t.p26[language]}</span> {t.p27[language]}
-          </p>
-        </div>
-        <div>
-          <p>
-            {t.p31[language]} <span>{t.p32[language]}</span> {t.p33[language]}{" "}
-          </p>
-        </div>
-        <div>
-          <p>
-            {t.p41[language]} <span>{t.p42[language]}</span> {t.p43[language]}
-          </p>
-        </div>
-      </div>
-      {screenWidth < 720 ? (
-        <FormMobile
-          formEmail={formEmail}
-          setFormEmail={setFormEmail}
-          handlePostEmail={handlePostEmail}
-        />
-      ) : (
-        <FormDesktop
-          formEmail={formEmail}
-          setFormEmail={setFormEmail}
-          handlePostEmail={handlePostEmail}
-        />
-      )}
-      {messageApi && (
-        <>
-          <p className="messageApi">
-            {messageApi}
-            {messageApi.includes("rééssayer") && (
-              <span className="span_error">!</span>
-            )}
-          </p>
-        </>
-      )}
-    </section>
+        {screenWidth < 720 ? (
+          <FormMobile
+            formEmail={formEmail}
+            setFormEmail={setFormEmail}
+            handlePostEmail={handlePostEmail}
+          />
+        ) : (
+          <FormDesktop
+            formEmail={formEmail}
+            setFormEmail={setFormEmail}
+            handlePostEmail={handlePostEmail}
+          />
+        )}
+        {messageApi && (
+          <>
+            <p className="messageApi">
+              {messageApi}
+              {messageApi.includes("rééssayer") && (
+                <span className="span_error">!</span>
+              )}
+            </p>
+          </>
+        )}
+      </section>
+    )
   );
 }
