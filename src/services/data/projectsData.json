@@ -14,7 +14,10 @@
     "video": "https://youtube.com/embed/pyyyKSBrlU0",
     "poster": "/poster/weatherposter.png",
     "format": "mobile",
-    "description": "Application mobile cross-plateforme, offrant des prévisions et des visualisations météorologiques et astronomiques."
+    "description": {
+      "fr": "Application mobile cross-plateforme, offrant des prévisions et des visualisations météorologiques et astronomiques.",
+      "en": "Cross-platform mobile application providing weather and astronomical forecasts and visualizations."
+    }
   },
   {
     "id": 1,
@@ -32,7 +35,10 @@
     "video": "https://youtube.com/embed/XwS-7c9GzNI",
     "poster": "/poster/streetposter.svg",
     "format": "web",
-    "description": "Site web responsive permettant de découvrir des œuvres d'art via une carte interactive. Avec un système de gamification intégré."
+    "description": {
+      "fr": "Site web responsive permettant de découvrir des œuvres d'art via une carte interactive. Avec un système de gamification intégré.",
+      "en": "Responsive website allowing users to explore artworks through an interactive map, featuring an integrated gamification system."
+    }
   },
   {
     "id": 2,
@@ -49,7 +55,10 @@
     "video": "https://www.youtube.com/embed/yH9_UERd5ZE",
     "poster": "/poster/budgetmade.png",
     "format": "mobile",
-    "description": "Développement d'une application mobile cross-plateforme, permettant de gérer et visualiser les dépenses avec une catégorisation semi-automatisée."
+    "description": {
+      "fr": "Développement d'une application mobile cross-plateforme, permettant de gérer et visualiser les dépenses avec une catégorisation semi-automatisée.",
+      "en": "Development of a cross-platform mobile application that allows users to manage and visualize expenses with semi-automated categorization."
+    }
   },
   {
     "id": 3,
@@ -67,6 +76,9 @@
     "video": "https://youtube.com/embed/XKqZp2TdxZ8",
     "poster": "/poster/royal.svg",
     "format": "web",
-    "description": "Site web responsive et dynamique permettant de visualisé et réserver une activités ou une chambres dasn un hotel."
+    "description": {
+      "fr": "Site web responsive et dynamique permettant de visualisé et réserver une activités ou une chambres dasn un hotel.",
+      "en": "Responsive and dynamic website that allows users to view and book activities or hotel rooms."
+    }
   }
 ]

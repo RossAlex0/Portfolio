@@ -1,23 +1,36 @@
+import { useContext } from "react";
+
+import translate from "../../services/data/translate.json";
+import { HomeLanguage } from "./type";
+import {
+  LanguageContext,
+  LanguageContextInterface,
+} from "../../services/context/languageContext";
+
 import "./home.css";
 
 export default function Home() {
-  return (
-    <section className="home">
-      <div className="home_container">
-        <div className="home_name">
-          <div className="animationContainer_name">
-            <p>Salut, moi c'est Alex</p>
-          </div>
-        </div>
-        <div className="home_creative">
-          <div className="animationContainer_creative">
-            <p> un </p>
-            <p> developpeur </p>
+  const { language } = useContext(LanguageContext) as LanguageContextInterface;
+  const t: HomeLanguage = translate.home;
 
-            <p> passionné.</p>
+  return (
+    language && (
+      <section className="home">
+        <div className="home_container">
+          <div className="home_name">
+            <div className="animationContainer_name">
+              <p>{t.first[language]}</p>
+            </div>
+          </div>
+          <div className="home_creative">
+            <div className="animationContainer_creative">
+              <p> {t.seconde[language]} </p>
+              <p> {t.anim[language]} </p>
+              <p> {t.last[language]}</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    )
   );
 }
