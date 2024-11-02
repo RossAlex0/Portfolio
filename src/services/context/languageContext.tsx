@@ -17,7 +17,7 @@ function LanguageProvider({ children }: { children: React.ReactNode }) {
       | "fr"
       | "en"
       | null;
-    if (userLang) {
+    if (userLang && (userLang === "fr" || userLang === "en")) {
       setLanguage(userLang);
     } else {
       setLanguage("fr");
