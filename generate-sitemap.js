@@ -8,7 +8,6 @@ const sitemap = new SitemapStream({
 const urls = [
   { url: "/", changefreq: "yearly", priority: 0.3 },
   { url: "/projects", changefreq: "monthly", priority: 0.8 },
-  { url: "/projects/web", changefreq: "monthly", priority: 0.5 },
   {
     url: "/projects/web/0",
     changefreq: "monthly",
@@ -39,7 +38,6 @@ const urls = [
       },
     ],
   },
-  { url: "/projects/mobile", changefreq: "monthly", priority: 0.5 },
   {
     url: "/projects/mobile/0",
     changefreq: "monthly",
@@ -74,6 +72,7 @@ const urls = [
   },
   { url: "/about", changefreq: "monthly", priority: 0.3 },
   { url: "/contact", changefreq: "monthly", priority: 1.0 },
+  { url: "/CV.pdf", changefreq: "yearly", priority: 0.9 },
 ];
 
 urls.forEach((url) => sitemap.write(url));

@@ -8,7 +8,7 @@ export default function ButtonLink() {
   return (
     <>
       <div className="link_container">
-        <a href="https://github.com/RossAlex0" target="_blank">
+        <a href="https://github.com/RossAlex0" target="_blank" rel="nofollow">
           <img src={git} alt="github" />
         </a>
       </div>
@@ -18,7 +18,11 @@ export default function ButtonLink() {
         </a>
       </div>
       <div className="link_container">
-        <a href="https://www.linkedin.com/in/rossignolalex/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/rossignolalex/"
+          target="_blank"
+          rel="nofollow"
+        >
           <img src={linkedin} alt="linkedin" />
         </a>
       </div>
