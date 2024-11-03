@@ -2,7 +2,7 @@ import { SitemapStream, streamToPromise } from "sitemap";
 import { createWriteStream } from "fs";
 
 const sitemap = new SitemapStream({
-  hostname: "https://www.alex-rossignol.fr",
+  hostname: "https://alex-rossignol.fr",
 });
 
 const urls = [
