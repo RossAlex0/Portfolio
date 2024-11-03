@@ -185,20 +185,6 @@
   transform: translateX(1.9em);
 }
 
-.fr {
-  font-family: var(--open-semibold);
-  color: #72c9d9;
-  font-size: 2rem;
-  margin-right: 0.5rem;
-}
-
-.en {
-  font-family: var(--open-semibold);
-  color: #72fa80;
-  font-size: 2rem;
-  margin-left: 0.5rem;
-}
-
 .burger_link {
   border-top: 1px solid white;
   border-top-left-radius: 32px;
@@ -256,6 +242,19 @@
       margin-top: -4rem;
       height: 65%;
     }
+  }
+  .fr {
+    font-family: var(--open-semibold);
+    color: #72c9d9;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+  }
+
+  .en {
+    font-family: var(--open-semibold);
+    color: #72fa80;
+    font-size: 2rem;
+    margin-left: 0.5rem;
   }
 }
 @media (width < 720px) {

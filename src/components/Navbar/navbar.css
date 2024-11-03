@@ -79,12 +79,14 @@
   font-family: var(--open-semibold);
   color: #72c9d9;
   margin-right: 0.3rem;
+  font-size: 1.1rem;
 }
 
 .en {
   font-family: var(--open-semibold);
   color: #72fa80;
   margin-left: 0.3rem;
+  font-size: 1.1rem;
 }
 
 .selected {
