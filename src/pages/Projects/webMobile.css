@@ -133,6 +133,7 @@
 .project_techno_mobile {
   height: 100%;
   width: 14%;
+  min-width: 11.5rem;
   background: transparent;
   border: 1px solid white;
   padding: 0.5rem;
@@ -143,6 +144,7 @@
   & .techno_border_mobile {
     height: 100%;
     width: 100%;
+    min-width: 10rem;
     padding: 1rem 0.5rem;
     border-radius: 2rem;
     background-color: #212121;
