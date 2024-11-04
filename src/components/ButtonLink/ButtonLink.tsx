@@ -12,7 +12,7 @@ export default function ButtonLink() {
           <img src={git} alt="github" />
         </a>
       </div>
-      <div className="link_container link_down">
+      <div className="link_container">
         <a href="/CV.pdf" download="Rossignol_Alex_CV.pdf">
           <img src={cv} alt="curriculomvitae" />
         </a>
