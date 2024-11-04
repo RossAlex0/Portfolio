@@ -20,6 +20,7 @@
       height: 70%;
       min-height: 15rem;
       width: 38%;
+      max-width: 610px;
       padding: 1.5rem;
       border-radius: 32px;
       display: flex;
