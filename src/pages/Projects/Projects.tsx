@@ -80,8 +80,8 @@ export default function Projects() {
               modules={[EffectCoverflow, Parallax, Navigation]}
               effect="coverflow"
               centeredSlides={true}
-              slidesPerView={3} // Utilisation de "auto" pour un centrage dynamique
-              spaceBetween={30} // Ajuste l’espace entre les slides pour réduire les chevauchements
+              slidesPerView={3}
+              spaceBetween={30}
               parallax={true}
               navigation
               coverflowEffect={{

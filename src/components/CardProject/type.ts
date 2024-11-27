@@ -2,9 +2,9 @@ export interface ProjectInterface {
   id: number;
   name: string;
   techno: Techno[];
+  link?: string;
   image: string;
   video: string;
-  poster: string;
   format: string;
   description: Translate;
 }

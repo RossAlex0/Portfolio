@@ -28,14 +28,20 @@
     font-family: var(--poppins);
     color: var(--text-color);
     font-size: 3rem;
+    text-align: center;
+    max-width: 70%;
   }
 
   & p {
-    height: 10%;
+    height: auto;
     font-family: var(--open-regular);
     color: var(--text-color);
     width: 60%;
     text-align: center;
+
+    & a {
+      color: var(--text-color);
+    }
   }
 }
 
@@ -47,6 +53,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  margin-top: 1rem;
 
   & .project_movie {
     height: 70%;
@@ -65,7 +72,7 @@
 }
 
 .project_techno {
-  height: 29%;
+  height: auto;
   min-width: 595px;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.79);
@@ -228,20 +235,14 @@
   justify-content: center;
   gap: 2rem;
 
-  & button:first-child {
-    position: absolute;
-    left: 3%;
-    bottom: 4%;
+  & button {
+    min-width: 152px;
+  }
 
+  & button:first-child {
     & img {
       transform: rotate(180deg);
     }
-  }
-
-  & button:last-child {
-    position: absolute;
-    right: 3%;
-    bottom: 4%;
   }
 
   & button {
@@ -299,23 +300,11 @@
 
     & .techno_border {
       height: fit-content;
+      gap: 0.5rem;
 
       & div {
         padding: 0.5rem;
       }
-    }
-  }
-
-  .project_button_web {
-    & button:first-child {
-      position: absolute;
-      left: 28%;
-      bottom: 15%;
-    }
-
-    & button:last-child {
-      right: 28%;
-      bottom: 15%;
     }
   }
 
@@ -359,8 +348,8 @@
 @media (width < 720px) {
   .project {
     & h2 {
-      font-size: 2rem;
-      margin-top: 0.2rem;
+      font-size: 1.5rem;
+      margin-top: 0.7rem;
     }
 
     & .project_back {
@@ -371,6 +360,7 @@
     }
 
     & p {
+      font-size: 14px;
       width: 100%;
     }
   }
@@ -399,12 +389,13 @@
     height: auto;
   }
   .project_techno {
-    width: 100%;
     min-width: 100%;
+    height: auto;
 
     & .techno_border {
       height: auto;
       flex-wrap: wrap;
+      gap: 0.5rem;
     }
   }
 

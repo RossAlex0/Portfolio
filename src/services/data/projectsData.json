@@ -12,7 +12,6 @@
     ],
     "image": "/project/wild.png",
     "video": "https://youtube.com/embed/pyyyKSBrlU0",
-    "poster": "/poster/weatherposter.png",
     "format": "mobile",
     "description": {
       "fr": "Application mobile cross-plateforme, offrant des prévisions et des visualisations météorologiques et astronomiques.",
@@ -33,7 +32,6 @@
     ],
     "image": "/project/street.png",
     "video": "https://youtube.com/embed/XwS-7c9GzNI",
-    "poster": "/poster/streetposter.svg",
     "format": "web",
     "description": {
       "fr": "Site web responsive permettant de découvrir des œuvres d'art via une carte interactive. Avec un système de gamification intégré.",
@@ -53,7 +51,6 @@
     ],
     "image": "/project/budgetmade.svg",
     "video": "https://www.youtube.com/embed/yH9_UERd5ZE",
-    "poster": "/poster/budgetmade.png",
     "format": "mobile",
     "description": {
       "fr": "Développement d'une application mobile cross-plateforme, permettant de gérer et visualiser les dépenses avec une catégorisation semi-automatisée.",
@@ -74,11 +71,29 @@
     ],
     "image": "/project/royal.svg",
     "video": "https://youtube.com/embed/XKqZp2TdxZ8",
-    "poster": "/poster/royal.svg",
     "format": "web",
     "description": {
-      "fr": "Site web responsive et dynamique permettant de visualisé et réserver une activités ou une chambres dasn un hotel.",
+      "fr": "Site web responsive et dynamique permettant de visualisé et réserver une activités ou une chambres dans un hotel.",
       "en": "Responsive and dynamic website that allows users to view and book activities or hotel rooms."
+    }
+  },
+  {
+    "id": 4,
+    "name": "Portfolio",
+    "techno": [
+      { "name": "HTML", "img": "/icon/html.svg" },
+      { "name": "CSS", "img": "/icon/css.svg" },
+      { "name": "TypeScript", "img": "/icon/typescript.svg" },
+      { "name": "React", "img": "/icon/react.svg" },
+      { "name": "Vercel", "img": "/icon/vercel.svg" }
+    ],
+    "link": "https://ayraultmarlene.fr",
+    "image": "/project/pfmarlene.svg",
+    "video": "https://youtube.com/embed/qqqlfxwVqqE",
+    "format": "web",
+    "description": {
+      "fr": "Refonte et optimisation d'un portfolio : amélioration et correction d'un portfolio existant conçu initialement avec Webflow, avec l'ajout d'animations, d'une page de chargement, et l'optimisation des performances globales.",
+      "en": "Redesign and optimization of a portfolio: improvement and correction of an existing portfolio initially created with Webflow, including the addition of animations, a loading page, and overall performance optimization."
     }
   }
 ]

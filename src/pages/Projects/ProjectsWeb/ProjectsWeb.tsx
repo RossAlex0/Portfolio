@@ -43,7 +43,16 @@ export default function ProjectsWeb() {
           {screenWidth < 720 ? "" : "Retour"}
         </button>
         <h2>{visibleProject.name}</h2>
-        <p>{visibleProject.description[language]}</p>
+        <p>
+          {visibleProject.description[language]}
+          {visibleProject.link && " -- "}
+          {visibleProject.link && (
+            <a href={visibleProject.link} target="_blank">
+              {visibleProject.link}
+            </a>
+          )}
+          {visibleProject.link && " -- "}
+        </p>
         <div className="project_web">
           <div className="project_movie">
             <iframe

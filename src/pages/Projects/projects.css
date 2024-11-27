@@ -281,7 +281,7 @@
     justify-content: center;
     gap: 5%;
     flex-wrap: wrap;
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
   }
   .project-buttons {
