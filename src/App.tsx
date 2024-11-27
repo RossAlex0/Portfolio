@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import Navbar from "./components/Navbar/Navbar";
 import ButtonLink from "./components/ButtonLink/ButtonLink";
@@ -28,6 +29,7 @@ function App() {
         <main>
           <Outlet />
         </main>
+        <SpeedInsights />
       </LanguageProvider>
     </>
   );
