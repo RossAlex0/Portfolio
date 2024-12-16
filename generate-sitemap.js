@@ -72,7 +72,7 @@ const urls = [
   },
   { url: "/about", changefreq: "monthly", priority: 0.3 },
   { url: "/contact", changefreq: "monthly", priority: 1.0 },
-  { url: "/CV.pdf", changefreq: "yearly", priority: 0.9 },
+  { url: "/CV-New.pdf", changefreq: "yearly", priority: 0.9 },
 ];
 
 urls.forEach((url) => sitemap.write(url));
