@@ -18,7 +18,7 @@ const urls = [
         title: "Street Art Hunter",
         description: "Démonstration du site web full stack street art hunter",
         thumbnail_loc:
-          "https://i9.ytimg.com/vi_webp/XwS-7c9GzNI/mqdefault.webp?v=672628ab&sqp=CKzQmLkG&rs=AOn4CLC-1oSz92GYNn-nlfkczwdwMqFdeg",
+          "https://i9.ytimg.com/vi_webp/XwS-7c9GzNI/mqdefault.webp?v=672628ab&sqp=CKjrj7sG&rs=AOn4CLBfOyh9o1J1dOrnEZ8jGLgK61ZbPg",
         duration: 130,
       },
     ],
@@ -33,7 +33,7 @@ const urls = [
         title: "RoyalBlue",
         description: "Démonstration du site web full stack RoyalBlue",
         thumbnail_loc:
-          "https://i9.ytimg.com/vi_webp/XKqZp2TdxZ8/mqdefault.webp?v=67262a47&sqp=CNjSmLkG&rs=AOn4CLB1fZMuz9AlxBmre9TLe0VK4TVsAA",
+          "https://i9.ytimg.com/vi_webp/XKqZp2TdxZ8/mq2.webp?sqp=CKjrj7sG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYACtAWKAgwIABABGGUgXig3MA8=&rs=AOn4CLCVoYCG7tt7aqvSWsMK9J5WDrlIcA",
         duration: 42,
       },
     ],
@@ -48,8 +48,21 @@ const urls = [
         title: "WildWeather",
         description:
           "Démonstration de l'applications mobile IOS et android Wild Weather",
+        duration: 115,
+      },
+    ],
+  },
+  {
+    url: "/projects/web/2",
+    changefreq: "monthly",
+    priority: 0.5,
+    video: [
+      {
+        content_loc: "https://youtube.com/embed/qqqlfxwVqqE",
+        title: "Porfolio client",
+        description: "Démonstration du portfolio client réalisé",
         thumbnail_loc:
-          "https://i9.ytimg.com/vi/pyyyKSBrlU0/mqdefault.jpg?v=671bb98d&sqp=CNjSmLkG&rs=AOn4CLCVZ0wps4Lg4EJWuv-APxsTVAazSQ",
+          "https://i9.ytimg.com/vi_webp/qqqlfxwVqqE/mq2.webp?sqp=CPzoj7sG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYACtAWKAgwIABABGH8gKSgvMA8=&rs=AOn4CLDNRfg1AuidxIdNKsndyPwEiXz-eA",
         duration: 115,
       },
     ],
@@ -64,15 +77,13 @@ const urls = [
         title: "BudgetMade",
         description:
           "Démonstration de l'applications mobile IOS et android BudgetMade",
-        thumbnail_loc:
-          "https://i9.ytimg.com/vi/yH9_UERd5ZE/mqdefault.jpg?v=671bb9af&sqp=CITVmLkG&rs=AOn4CLAxhvim1s_A2P1FJ4Uz6C4o_Tjrdg",
         duration: 87,
       },
     ],
   },
   { url: "/about", changefreq: "monthly", priority: 0.3 },
   { url: "/contact", changefreq: "monthly", priority: 1.0 },
-  { url: "/CV.pdf", changefreq: "yearly", priority: 0.9 },
+  { url: "/CV_ALEX_ROSSIGNOL.pdf", changefreq: "monthly", priority: 0.9 },
 ];
 
 urls.forEach((url) => sitemap.write(url));

@@ -7,7 +7,7 @@ import react from "/icon/react.svg";
 import node from "/icon/node.svg";
 import mongo from "/icon/mongo.svg";
 import mysql from "/icon/sql.svg";
-import face from "/face.png";
+import face from "/face.webp";
 import figma from "/icon/figma.svg";
 import git from "/icon/git.svg";
 import jest from "/icon/jest.svg";

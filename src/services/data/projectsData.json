@@ -10,7 +10,7 @@
       { "name": "ExpressJs", "img": "/icon/express.svg" },
       { "name": "MongoDB", "img": "/icon/mongo.svg" }
     ],
-    "image": "/project/wild.png",
+    "image": "/project/wild.webp",
     "video": "https://youtube.com/embed/pyyyKSBrlU0",
     "format": "mobile",
     "description": {
@@ -30,7 +30,7 @@
       { "name": "ExpressJs", "img": "/icon/express.svg" },
       { "name": "MySQL", "img": "/icon/sql.svg" }
     ],
-    "image": "/project/street.png",
+    "image": "/project/street.webp",
     "video": "https://youtube.com/embed/XwS-7c9GzNI",
     "format": "web",
     "description": {
@@ -49,7 +49,7 @@
       { "name": "ExpressJs", "img": "/icon/express.svg" },
       { "name": "MySQL", "img": "/icon/sql.svg" }
     ],
-    "image": "/project/budgetmade.svg",
+    "image": "/project/budgetmade.webp",
     "video": "https://www.youtube.com/embed/yH9_UERd5ZE",
     "format": "mobile",
     "description": {
@@ -69,7 +69,7 @@
       { "name": "ExpressJs", "img": "/icon/express.svg" },
       { "name": "MySQL", "img": "/icon/sql.svg" }
     ],
-    "image": "/project/royal.svg",
+    "image": "/project/royal.webp",
     "video": "https://youtube.com/embed/XKqZp2TdxZ8",
     "format": "web",
     "description": {
@@ -88,7 +88,7 @@
       { "name": "Vercel", "img": "/icon/vercel.svg" }
     ],
     "link": "https://ayraultmarlene.fr",
-    "image": "/project/pfmarlene.svg",
+    "image": "/project/pfmarlene.webp",
     "video": "https://youtube.com/embed/qqqlfxwVqqE",
     "format": "web",
     "description": {
