@@ -10,7 +10,7 @@ import { LanguageProvider } from "./services/context/languageContext";
 
 import "./style/app.css";
 
-function App() {
+export default function App() {
   const screenWidth = useScreenWidth();
 
   return (
@@ -34,5 +34,3 @@ function App() {
     </>
   );
 }
-
-export default App;

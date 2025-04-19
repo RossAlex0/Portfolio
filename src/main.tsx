@@ -26,30 +26,22 @@ const router = createBrowserRouter([
       {
         path: "/projects/web",
         element: <ProjectsWeb />,
-        loader: () => {
-          return getProjectsFormat("web");
-        },
+        loader: () => getProjectsFormat("web"),
       },
       {
         path: "/projects/web/:id",
         element: <ProjectsWeb />,
-        loader: () => {
-          return getProjectsFormat("web");
-        },
+        loader: () => getProjectsFormat("web"),
       },
       {
         path: "/projects/mobile",
         element: <ProjectsMobile />,
-        loader: () => {
-          return getProjectsFormat("mobile");
-        },
+        loader: () => getProjectsFormat("mobile"),
       },
       {
         path: "/projects/mobile/:id",
         element: <ProjectsMobile />,
-        loader: () => {
-          return getProjectsFormat("mobile");
-        },
+        loader: () => getProjectsFormat("mobile"),
       },
       {
         path: "/about",
