@@ -83,7 +83,7 @@ const urls = [
   },
   { url: "/about", changefreq: "monthly", priority: 0.3 },
   { url: "/contact", changefreq: "monthly", priority: 1.0 },
-  { url: "/CV_ALEX_ROSSIGNOL.pdf", changefreq: "monthly", priority: 0.9 },
+  { url: "/CV.pdf", changefreq: "monthly", priority: 0.9 },
 ];
 
 urls.forEach((url) => sitemap.write(url));

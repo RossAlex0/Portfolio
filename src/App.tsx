@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 import Navbar from "./components/Navbar/Navbar";
 import ButtonLink from "./components/ButtonLink/ButtonLink";
@@ -10,7 +11,7 @@ import { LanguageProvider } from "./services/context/languageContext";
 
 import "./style/app.css";
 
-function App() {
+export default function App() {
   const screenWidth = useScreenWidth();
 
   return (
@@ -29,10 +30,9 @@ function App() {
         <main>
           <Outlet />
         </main>
+        <Analytics />
         <SpeedInsights />
       </LanguageProvider>
     </>
   );
 }
-
-export default App;
