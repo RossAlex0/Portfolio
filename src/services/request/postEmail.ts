@@ -7,7 +7,7 @@ interface Error {
 
 export const postEmail = async (request: RequestEmail) => {
   return myPath
-    .post("/new-send-email", request)
+    .post("/email/", request)
     .then((response) => response.data.message)
     .catch((error) => {
       console.error(
